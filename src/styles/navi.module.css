@@ -1,0 +1,49 @@
+/*
+   NaviCSSandheader
+*/
+@charset "UTF-8";
+
+.text{
+    font-size: 20px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.image{
+    max-width:100%;
+    height:auto;
+}
+
+.header{ 
+    background-color: rgba(91, 222, 248, 0.6);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+}
+
+.li{
+    margin-left: 70px;
+}
+
+.link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav{
+    margin-left: auto;
+    padding-right: 2%;
+}
+
+.link:hover{
+    color: #a1fe76;
+}
