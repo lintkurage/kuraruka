@@ -1,5 +1,6 @@
 /*
    NaviCSSandheader
+   左右それぞれ200px padding
 */
 @charset "UTF-8";
 
@@ -7,10 +8,11 @@
     font-size: 20px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
-
+/*header左要素*/
 .image{
     max-width:100%;
     height:auto;
+    padding-left: 100px;
 }
 
 .header{ 
@@ -24,10 +26,11 @@
     top:0;
     left: 0;
 }
-
+/*header右要素*/
 .ul{
     display: flex;
     list-style: none;
+    padding-right: 100px;
 }
 
 .li{
@@ -36,7 +39,7 @@
 
 .link{
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 
 .nav{
@@ -45,5 +48,5 @@
 }
 
 .link:hover{
-    color: #a1fe76;
+    color: #ffffff;
 }

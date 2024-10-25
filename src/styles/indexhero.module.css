@@ -9,26 +9,67 @@
 }
 
 .hero {
-    height: 550px;
-    background-color: rgba(85, 85, 85, 0.5);
+    height: 560px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .profilearea {
     height: 300px;
-    background-color: rgba(91, 222, 248, 0.6);
+    background-color: rgba(91, 222, 248, 0.5);
 }
 
 .profiletext {
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 200;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
         sans-serif;
-    color: #ffffff;
-    padding-left: 38px;
+    color: #000000;
+    padding-left: 138px;
     padding-top: 10px;
+}
+
+.nametext{
+    font-size: 24px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+        sans-serif;
+    color: #000000;
+    padding-left: 138px;
+    padding-top: 20px;
+}
+
+.content{
+    padding-left: 138px;
+    padding-top: 6px;
+}
+
+.contenttext{
+    font-size: 14px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+        sans-serif;
+    color: #000000;
+    padding-top: 14px;
+}
+
+.contenttexth3{
+    font-size: 18px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+        sans-serif;
+    color: #000000;
+    padding-top: 12px;
+}
+
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link:hover{
+    color: #0004ff;
+    opacity: 50%;
 }
 
 .line {
     border: none;
-    background-color: #ffffff;
+    background-color: #000000;
     height: 2px;
 }
