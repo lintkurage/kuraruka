@@ -4,8 +4,8 @@
 @charset "UTF-8";
 
 .hero {
-    height: 800px;
-    background-color: #ffffff;
+    padding-top: 0px;
+    background-color: #fffff1;
 }
 
 .heropos{
@@ -38,7 +38,7 @@
     font-size: 18px;
     color: #000000;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-top: 12px;
+    line-height: 1.5em;
 }
 
 .portfoliolink{

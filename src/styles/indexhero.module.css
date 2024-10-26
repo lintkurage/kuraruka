@@ -5,21 +5,23 @@
 
 .image {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 20px;
 }
 
 .hero {
-    height: 560px;
-    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #fffff1;
 }
 
 .profilearea {
-    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgba(91, 222, 248, 0.5);
 }
 
 .profiletext {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 200;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
         sans-serif;
@@ -47,7 +49,7 @@
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
         sans-serif;
     color: #000000;
-    padding-top: 12px;
+    line-height: 1.5em;
 }
 
 .contenttexth3{
