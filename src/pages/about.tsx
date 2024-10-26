@@ -10,6 +10,7 @@ export default function About() {
     <>
     <Layout>
         <Abouthero></Abouthero>
+
     </Layout>
     </>
   );

@@ -9,7 +9,6 @@ export default function Blog() {
   return (
     <>
     <Layout title="Blogページです">
-      <p>このページはブログのページです.</p>
     </Layout>
     </>
   )
