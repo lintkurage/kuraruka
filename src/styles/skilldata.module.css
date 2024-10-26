@@ -1,0 +1,124 @@
+/*
+   NaviCSSandheader
+   左右それぞれ200px padding
+*/
+@charset "UTF-8";
+
+.contents{
+    padding-left: 138px;
+    padding-right: 138px;
+    padding-bottom: 40px;
+    background-color: #fffff1;
+}
+
+.textcontents{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #fffff1;
+    /*クリーム色#fafde7*/
+}
+
+.titletext{
+    font-size: 40px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 138px;
+}
+
+.line {
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    margin-top: 0;
+}
+
+/*front*/
+.toggleButtonfront{
+    margin: 10px;
+    padding: 10px 20px;
+    height: 35px;
+    width: 140px;
+    background-color: #5bdef8;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggleButtonfront:hover {
+    background-color: #2cd7fa;
+}
+/*back*/
+.toggleButtonback{
+    margin: 10px;
+    padding: 10px 20px;
+    height: 35px;
+    width: 140px;
+    background-color: #80fba1;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggleButtonback:hover {
+    background-color: #49fc79;
+}
+/*tool*/
+.toggleButtontool{
+    margin: 10px;
+    padding: 10px 20px;
+    height: 35px;
+    width: 140px;
+    background-color: #f6746e;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggleButtontool:hover {
+    background-color: #f7433a;
+}
+
+.buttoncontents{
+    text-align: center;
+}
+
+.skillsettext{
+    text-align: left;
+    font-size: 24px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-bottom: 20px;/*タイトルと説明の距離*/
+}
+
+.skillcontents{
+    text-align: center;
+    margin-bottom: '20px' ;
+}
+
+.skilltext{ 
+    font-size: 30px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.charttext{
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;/*タイトルと説明の距離*/
+    line-height: 1.5em;
+}
+
+.skillcomments{
+    text-align: left;
+    font-size: 18px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;/*タイトルと説明の距離*/
+    line-height: 1.5em;
+}

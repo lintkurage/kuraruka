@@ -1,0 +1,85 @@
+/*
+    css
+*/
+
+@charset "UTF-8";
+
+.text{
+    font-size: 18px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    line-height: 1.5em;
+}
+
+.titletext{
+    font-size: 40px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 138px;
+    padding-top: 20px;
+}
+
+.useingsofttext{
+    font-size: 24px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-top: 10px;
+}
+
+.techtext{
+    font-size: 18px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    line-height: 1.5em;
+}
+
+.contentstitle{
+    font-size: 30px;
+    color: #000000;
+    text-decoration: underline;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-bottom: 20px;/*タイトルと説明の距離*/
+}
+
+.contents{
+    background-color: #fffff1;
+}
+
+.workscontents{
+    padding-top: 20px;
+    padding-left: 138px;
+    padding-right: 138px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+/*画像とテキストの距離*/
+.textcontents{
+    padding-left: 80px;
+}
+
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link:hover{
+    color: #0004ff;
+    opacity: 50%;
+}
+
+.line {
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    margin-top: 0;
+}
+
+.portfoliolink{
+    color: #f41f1f;
+    text-decoration: none;
+}
+
+.portfoliolink:hover{
+    color: #3c95d0;
+    opacity: 50%;
+}

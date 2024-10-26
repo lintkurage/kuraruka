@@ -9,7 +9,6 @@ interface LayoutProp{
 }
 
 export default function Layout({title,children}:LayoutProp) {
-    const mailaddres:string="kurage@gmail.com";
     const licensetext:string="Unauthorized copying and replication of the contents of this site, text and images are strictly prohibited."
     return (
         <>
@@ -17,7 +16,7 @@ export default function Layout({title,children}:LayoutProp) {
             <main>
             {children}
             </main>
-            <Footer email={mailaddres}  license={licensetext}>
+            <Footer license={licensetext}>
             </Footer>
         </>
     )

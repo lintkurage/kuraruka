@@ -1,25 +1,19 @@
 import Link from "next/link"
 import React, { ReactNode } from "react";
+import styles from "../styles/footer.module.css"
 
 interface FooterProp{
     license:string;
-    email:string;
-    children?:ReactNode;
 }
 
-export default function Footer({license,email,children}:FooterProp){
+export default function Footer({license}:FooterProp){
     return(
         <>
-            <footer>
-                <div>
+            <footer className={styles.footer}>
+                <div className={styles.footercontents}>
                     <div>
-                        {license}
-                    </div>
-                    <div>
-                        {email}
-                    </div>
-                    <div>
-                        {children}
+                        <p className={styles.licensetext}>{license}</p>
+                        <p className={styles.licensetext}>(C) kuraruka All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>
