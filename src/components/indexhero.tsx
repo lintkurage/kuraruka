@@ -26,7 +26,7 @@ export default function Indexhero() {
                     <div className={styles.content}>
                         <p className={styles.contenttext}>温泉といるか、くらげをこよなく愛する理系大学生。</p>
                         <p className={styles.contenttext}>専門はデジタルファブリケーション。その他、Webフロントエンド開発、ゲームや音楽制作等行っています。</p>
-                        <p className={styles.contenttext}>機材:MacBook Pro M1Proチップ,WindowsPC(Intel Core i7 14700K,GeForce RTX 4070Ti)</p>
+                        <p className={styles.contenttext}>人々にくすっと笑ってもらえるものを作ります。</p>
                         <p className={styles.contenttexth3}>X(旧Twitter): <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
                         <p className={styles.contenttexth3}>Git Hub: <Link href="https://github.com/lintkurage" className={styles.link}>https://github.com/lintkurage</Link></p>
                         <p className={styles.contenttexth3}>YouTube: <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>

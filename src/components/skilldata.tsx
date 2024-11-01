@@ -75,7 +75,7 @@ const SkillData: React.FC = () => {
     return (
         <>
             <div className={styles.textcontents}>
-                <h1 className={styles.titletext}>Skill Set</h1>
+                <h1 className={styles.titletext}>My Skill Set</h1>
                 <hr className={styles.line} />
             </div>
             <div className={styles.contents}>
