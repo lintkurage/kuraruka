@@ -4,6 +4,7 @@ import Blogs from 'src/components/blog';
 import { client } from 'src/libs/client';
 import { BlogType } from '@/types/blog';
 import Loading from 'src/components/loading';
+import Bloghero from 'src/components/bloghero';
 
 const Blog = () => {
   const [blogs, setBlogs] = useState<BlogType[]>([]);
@@ -34,6 +35,7 @@ const Blog = () => {
   if (loading) {
     return (
       <Layout title="Blogページです">
+        <Bloghero></Bloghero>
         <Loading />
       </Layout>
     );
@@ -42,6 +44,7 @@ const Blog = () => {
   if (error) {
     return (
       <Layout title="Blogページです">
+        <Bloghero></Bloghero>
         <div>{error}</div> {/* エラーメッセージを表示 */}
       </Layout>
     );
@@ -49,6 +52,7 @@ const Blog = () => {
 
   return (
     <Layout title="Blogページです">
+      <Bloghero></Bloghero>
       <Blogs blogs={blogs} />
     </Layout>
   );

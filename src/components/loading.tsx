@@ -1,10 +1,10 @@
 import React from 'react';
+import styles from '../styles/loading.module.css'
 
-export default function Loading(){
-    return(
+export default function Loading() {
+    return (
         <div >
-        <div ></div>
-        <p>読み込み中...</p>
-    </div>
+            <p className={styles.text}>Now Loading...</p>
+        </div>
     );
 }
