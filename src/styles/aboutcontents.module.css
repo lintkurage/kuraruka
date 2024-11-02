@@ -1,0 +1,55 @@
+/*
+    css
+*/
+
+@charset "UTF-8";
+
+.contents{
+    background-color: #fffff1;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.titletext{
+    font-size: 40px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 138px;
+    line-height: 1.5em;
+}
+
+.line {
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    margin-top: 0;
+}
+
+.developmentenvironment{
+    padding-top: 20px;
+    padding-left: 138px;
+    display: flex;
+}
+
+.devtext{
+    font-size: 18px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    line-height: 1.5em;
+    padding-left: 30px;
+}
+
+.text{
+    font-size: 18px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    line-height: 1.5em;
+}
+
+.texth3{
+    font-size: 30px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    line-height: 1.5em;
+    padding-left: 30px;
+}

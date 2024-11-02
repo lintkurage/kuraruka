@@ -18,6 +18,10 @@
     padding-top: 20px;
 }
 
+.image{
+    border-radius: 15px;
+}
+
 .useingsofttext{
     font-size: 24px;
     color: #000000;

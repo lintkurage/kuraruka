@@ -21,6 +21,7 @@ export default function Contents() {
                                 width={600}
                                 height={400}
                                 alt="works01"
+                                className={styles.image}
                             />
                         </Link>
                     </div>
@@ -54,6 +55,7 @@ export default function Contents() {
                                 width={600}
                                 height={400}
                                 alt="works01"
+                                className={styles.image}
                             />
                         </Link>
                     </div>
@@ -86,6 +88,7 @@ export default function Contents() {
                                 width={600}
                                 height={400}
                                 alt="works01"
+                                className={styles.image}
                             />
                         </Link>
                     </div>
