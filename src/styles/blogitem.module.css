@@ -15,6 +15,11 @@
     display: flex;
 }
 
+.link :hover{
+    color: #0004ff;
+    opacity: 50%;
+}
+
 .nametitle {
     font-size: 30px;
     color: #000000;

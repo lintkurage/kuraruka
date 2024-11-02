@@ -14,20 +14,24 @@ const BlogItem = ({ blog }: BlogItemProps) => {
     return (
         <div className={styles.content}>
             <div className={styles.article}>
-            <Link href={`/blog/${blog.slug}`} className={styles.link}>
                 <div className={styles.blogcontents}>
+
                     <div>
-                        <Image
-                            src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"}
-                            width={600}
-                            height={400}
-                            alt="image"
-                            className={styles.image}
-                        />
+                        <Link href={`/blog/${blog.slug}`} className={styles.link}>
+                            <Image
+                                src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"}
+                                width={600}
+                                height={400}
+                                alt="image"
+                                className={styles.image}
+                            />
+                        </Link>
                     </div>
                     <div className={styles.namecontents}>
                         <div>
-                            <h2 className={styles.nametitle}>{blog.title}</h2>
+                            <Link href={`/blog/${blog.slug}`} className={styles.link}>
+                                <h2 className={styles.nametitle}>{blog.title}</h2>
+                            </Link>
                         </div>
                         <div>
                             <p className={styles.text}>{format(new Date(blog.publishData), "yyyy/MM/dd")}</p>
@@ -37,9 +41,8 @@ const BlogItem = ({ blog }: BlogItemProps) => {
                         </div>
                     </div>
                 </div>
-            </Link>
             </div>
-        </div>
+        </div >
     )
 }
 
