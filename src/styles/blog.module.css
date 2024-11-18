@@ -1,0 +1,58 @@
+/*
+    css
+    [slug].tsx用のcssです
+*/
+
+@charset "UTF-8";
+
+.blogtitle{
+    font-size: 40px;
+    color: #000000;
+    text-decoration: underline;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-bottom: 20px;/*タイトルと説明の距離*/
+    padding-left: 138px;
+    line-height: 1.5em;
+}
+
+.publishedAt{
+    font-size: 24px;
+    color: #000000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 138px;
+    line-height: 1.5em;
+}
+
+.blog{
+    background-color: #fffff1;
+}
+
+.titlecontent{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.titletext{
+    font-size: 40px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 138px;
+}
+
+.line {
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    margin-top: 0;
+}
+
+.eyecatch{
+    text-align: center;
+
+}
+
+.bloghtml{
+    padding-top: 20px;
+    padding-left: 138px;
+    padding-right: 138px;
+    padding-bottom: 10px;
+}
