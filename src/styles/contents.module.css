@@ -4,13 +4,6 @@
 
 @charset "UTF-8";
 
-.text{
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    line-height: 1.5em;
-}
-
 .titletext{
     font-size: 40px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -20,20 +13,6 @@
 
 .image{
     border-radius: 15px;
-}
-
-.useingsofttext{
-    font-size: 24px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-top: 10px;
-}
-
-.techtext{
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    line-height: 1.5em;
 }
 
 .contentstitle{

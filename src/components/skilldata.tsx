@@ -81,11 +81,13 @@ const SkillData: React.FC = () => {
             <div className={styles.contents}>
                 <div>
                 <div className={styles.skillcontents}>
-                    <h2 className={styles.skilltext}>{selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Skills</h2>
-                    <p className={styles.skillcomments}>これまでに身につけたスキルをレーダーグラフにまとめまてみました。広く浅くですがフロントエンドからバックエンドまで幅広くスキルの上に取り組んでいます。特段これが強みというものはありませが、
+                    <h2>{selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Skills</h2>
+                    <div className={styles.skillcomments}>
+                    <p>これまでに身につけたスキルをレーダーグラフにまとめまてみました。広く浅くですがフロントエンドからバックエンドまで幅広くスキルの上に取り組んでいます。特段これが強みというものはありませが、
                         オールランダーを目指して日々研鑽を積んでいます。幅広く、モダンな技術、知識を持ち、人に喜んでもらえるものを作る発想力がある点が強みであると感じています。
                         ただ、専門性の低さを課題としており、特にフレームワーク、バックエンド、機械学習/AI、グラフィックデザインについての専門性を高めていきたいと考えています。
                     </p>
+                    </div>
                 </div>
                     <div>
                         <ResponsiveContainer width="100%" height={400}>
@@ -105,13 +107,13 @@ const SkillData: React.FC = () => {
                     </div>
                     <div className={styles.buttoncontents}>
                         <button className={styles.toggleButtonfront} onClick={() => toggleData('frontend')}>
-                            Frontend Skills
+                            <p>Frontend</p>
                         </button>
                         <button className={styles.toggleButtonback} onClick={() => toggleData('backend')}>
-                            Backend Skills
+                            <p>Backend</p>
                         </button>
                         <button className={styles.toggleButtontool} onClick={() => toggleData('tool')}>
-                            Tools
+                            <p>Tools</p>
                         </button>
                     </div>
                 </div>

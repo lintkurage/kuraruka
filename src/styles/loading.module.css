@@ -4,11 +4,8 @@
 
 @charset "UTF-8";
 
-.text{
+.contents{
     background-color: #fffff1;
-    font-size: 30px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     padding-top: 20px;
     text-align: center;
     padding-bottom: 750px;

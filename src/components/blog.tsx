@@ -38,30 +38,37 @@ const Blogs = ({ blogs }: BlogProps) => {
 
             {/* ページネーションのUI */}
             <div className="pagination">
-                <button
-                    onClick={() => handlePageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
-                >
-                    前のページ
-                </button>
-
-                {/* ページ番号の表示 */}
-                {Array.from({ length: totalPages }, (_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => handlePageChange(index + 1)}
-                        className={currentPage === index + 1 ? 'active' : ''}
-                    >
-                        {index + 1}
-                    </button>
-                ))}
-
-                <button
-                    onClick={() => handlePageChange(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                >
-                    次のページ
-                </button>
+                <ul className={styles.ulist}>
+                    <li>
+                        <button className={styles.pagenationbutton}
+                            onClick={() => handlePageChange(currentPage - 1)}
+                            disabled={currentPage === 1}
+                        >
+                            &lt;
+                        </button>
+                    </li>
+                    <li>
+                        {/* ページ番号の表示 */}
+                        {Array.from({ length: totalPages }, (_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => handlePageChange(index + 1)}
+                                className={styles.pagenationbutton}
+                            >
+                                {index + 1}
+                            </button>
+                        ))}
+                    </li>
+                    <li>
+                        <button
+                            className={styles.pagenationbutton}
+                            onClick={() => handlePageChange(currentPage + 1)}
+                            disabled={currentPage === totalPages}
+                        >
+                            &gt;
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     );

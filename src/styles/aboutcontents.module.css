@@ -31,25 +31,10 @@
     display: flex;
 }
 
-.devtext{
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    line-height: 1.5em;
-    padding-left: 30px;
+.ul{
+    border: none;
 }
 
-.text{
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    line-height: 1.5em;
-}
-
-.texth3{
-    font-size: 30px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    line-height: 1.5em;
+.textcontents{
     padding-left: 30px;
 }

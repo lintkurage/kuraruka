@@ -9,22 +9,22 @@ export default function Navi() {
                 <ul className={styles.ul}>
                     <li className={styles.li}>
                         <Link href="/" className={styles.link}>
-                            <p className={styles.text}>Home</p>
+                            <p>Home</p>
                         </Link>
                     </li>
                     <li className={styles.li}>
                         <Link href="/about" className={styles.link}>
-                            <p className={styles.text}>About</p>
+                            <p>About</p>
                         </Link>
                     </li>
                     <li className={styles.li}>
                         <Link href="/blog" className={styles.link}>
-                            <p className={styles.text}>Blog</p>
+                            <p>Blog</p>
                         </Link>
                     </li>
                     <li className={styles.li}>
                         <Link href="/contact" className={styles.link}>
-                            <p className={styles.text}>Contact</p>
+                            <p>Contact</p>
                         </Link>
                     </li>
                 </ul>

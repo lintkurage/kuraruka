@@ -20,8 +20,8 @@ const BlogItem = ({ blog }: BlogItemProps) => {
                         <Link href={`/blog/${blog.slug}`} className={styles.link}>
                             <Image
                                 src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"}
-                                width={600}
-                                height={400}
+                                width={400}
+                                height={200}
                                 alt="image"
                                 className={styles.image}
                             />
@@ -30,7 +30,7 @@ const BlogItem = ({ blog }: BlogItemProps) => {
                     <div className={styles.namecontents}>
                         <div>
                             <Link href={`/blog/${blog.slug}`} className={styles.link}>
-                                <h2 className={styles.nametitle}>{blog.title}</h2>
+                                <h1 className={styles.nametitle}>{blog.title}</h1>
                             </Link>
                         </div>
                         <div>

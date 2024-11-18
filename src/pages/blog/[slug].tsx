@@ -29,7 +29,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
                         <h1 className={styles.blogtitle}>{article.title}</h1>
 
                         {/* 記事公開日 */}
-                        <p className={styles.publishedAt}>公開日: {new Date(article.publishData).toLocaleDateString()}</p>
+                        <p className={styles.publishedAt}>Publish Date: {new Date(article.publishData).toLocaleDateString()}</p>
                         <p className={styles.publishedAt}>Author:iruka2kurage</p>
                     </div>
                     <div className={styles.eyecatch}>
