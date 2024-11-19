@@ -4,48 +4,52 @@
 
 @charset "UTF-8";
 
-.titletext{
-    font-size: 40px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-left: 138px;
-    padding-top: 20px;
+.titletext {
+    padding-left: 100px;
+    padding-top: 10px;
 }
 
-.image{
+.imagecontents {
+    width: 500px; /* 必要に応じて調整 */
+    height: auto;
+}
+
+.image {
     border-radius: 15px;
+    object-fit: cover; /* 必要に応じて調整 */
 }
 
-.contentstitle{
+.contentstitle {
     font-size: 30px;
     color: #000000;
     text-decoration: underline;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-bottom: 20px;/*タイトルと説明の距離*/
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+        sans-serif;
+    padding-bottom: 20px; /*タイトルと説明の距離*/
 }
 
-.contents{
+.contents {
     background-color: #fffff1;
 }
 
-.workscontents{
+.workscontents {
     padding-top: 20px;
-    padding-left: 138px;
-    padding-right: 138px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 10px;
     display: flex;
 }
 
-/*画像とテキストの距離*/
-.textcontents{
-    padding-left: 80px;
+.textcontents {
+    padding-left: 50px;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: #000000;
 }
 
-.link:hover{
+.link:hover {
     color: #0004ff;
     opacity: 50%;
 }
@@ -57,12 +61,58 @@
     margin-top: 0;
 }
 
-.portfoliolink{
+.portfoliolink {
     color: #f41f1f;
     text-decoration: none;
 }
 
-.portfoliolink:hover{
+.portfoliolink:hover {
     color: #3c95d0;
     opacity: 50%;
+}
+
+@media (max-width: 1000px){
+    .imagecontents {
+        width: 400px; /* 必要に応じて調整 */
+        height: auto;
+    }
+    .titletext {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    .workscontents {
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagecontents {
+        margin: 0 auto;
+        width: 350px; /* 必要に応じて調整 */
+        height: auto;
+    }
+    .titletext {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .workscontents {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+
+    .textcontents {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .portfoliolink{
+        font-size: 9px;
+    }
 }

@@ -5,8 +5,8 @@ import styles from "../styles/indexhero.module.css"
 
 export default function Indexhero() {
     //画像の大きさパラメータ
-    const mainimagewidth=1200
-    const mainimagehight=450
+    const mainimagewidth=1000
+    const mainimagehight=400
     return (
         <>
             <div className={styles.hero}>
@@ -17,6 +17,7 @@ export default function Indexhero() {
                             width={mainimagewidth}
                             height={mainimagehight}
                             alt="index1"
+                            layout="responsive"
                         />
                     </div>
                 </div>

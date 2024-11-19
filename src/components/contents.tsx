@@ -1,12 +1,28 @@
-import React, { ReactNode } from "react";
+import React, {useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/contents.module.css"
 
 export default function Contents() {
     //画像の大きさパラメータ
-    const imagewidth=360
+    const imagewidth=400
     const imagehight=240
+    const modilesize=768
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // 初期判定
+        const updateMobileView = () => {
+            setIsMobile(window.innerWidth <= modilesize); 
+        };
+
+        updateMobileView();
+        // リサイズイベントリスナー
+        window.addEventListener("resize", updateMobileView);
+        return () => window.removeEventListener("resize", updateMobileView);
+    }, []);
+
     return (
         <>
             <div className={styles.contents}>
@@ -25,6 +41,7 @@ export default function Contents() {
                                 height={imagehight}
                                 alt="works01"
                                 className={styles.image}
+                                layout={isMobile ? "intrinsic" : "none"}
                             />
                         </Link>
                     </div>
@@ -59,6 +76,7 @@ export default function Contents() {
                                 height={imagehight}
                                 alt="works01"
                                 className={styles.image}
+                                layout={isMobile ? "intrinsic" : "none"}
                             />
                         </Link>
                     </div>
@@ -92,6 +110,7 @@ export default function Contents() {
                                 height={imagehight}
                                 alt="works01"
                                 className={styles.image}
+                                layout={isMobile ? "intrinsic" : "none"}
                             />
                         </Link>
                     </div>
