@@ -12,8 +12,8 @@ export default function Footer({license}:FooterProp){
             <footer className={styles.footer}>
                 <div className={styles.footercontents}>
                     <div>
-                        <p className={styles.licensetext}>{license}</p>
-                        <p className={styles.licensetext}>(C) kuraruka All Rights Reserved.</p>
+                        <h3 className={styles.licensetext}>{license}</h3>
+                        <h3 className={styles.licensetext}>(C) kuraruka All Rights Reserved.</h3>
                     </div>
                 </div>
             </footer>

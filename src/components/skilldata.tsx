@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import {
     Radar,
     RadarChart,
@@ -50,6 +50,23 @@ const categoryColors: { [key: string]: string } = {
 };
 
 const SkillData: React.FC = () => {
+
+    const modilesize=768
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // 初期判定
+        const updateMobileView = () => {
+            setIsMobile(window.innerWidth <= modilesize); 
+        };
+
+        updateMobileView();
+        // リサイズイベントリスナー
+        window.addEventListener("resize", updateMobileView);
+        return () => window.removeEventListener("resize", updateMobileView);
+    }, []);
+
     const [selectedCategory, setSelectedCategory] = useState<'frontend' | 'backend' | 'tool'>('frontend');
 
     const toggleData = (category: 'frontend' | 'backend' | 'tool') => {
@@ -72,6 +89,12 @@ const SkillData: React.FC = () => {
     const currentData = getData();
     const currentColor = categoryColors[selectedCategory];
 
+    let radarmargin=60
+
+    if(isMobile==true){
+        radarmargin=50
+    }
+
     return (
         <>
             <div className={styles.textcontents}>
@@ -90,8 +113,16 @@ const SkillData: React.FC = () => {
                     </div>
                 </div>
                     <div>
-                        <ResponsiveContainer width="100%" height={400}>
-                            <RadarChart cx="50%" cy="50%" outerRadius="80%" data={currentData}>
+                        <ResponsiveContainer width="100%" height={isMobile ? 200 : 400} className={styles.recharts}>
+                            <RadarChart
+                             cx="50%" cy="50%" outerRadius="100%" data={currentData} 
+                             margin={{
+                                top: radarmargin,
+                                right: radarmargin,
+                                bottom: radarmargin,
+                                left: radarmargin,
+                              }}
+                             >
                                 <PolarGrid />
                                 <PolarAngleAxis dataKey="subject" />
                                 <PolarRadiusAxis domain={[0, 5]} />
