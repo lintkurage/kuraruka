@@ -5,37 +5,26 @@
 
 @charset "UTF-8";
 
-.blogtitle{
-    font-size: 40px;
-    color: #000000;
-    text-decoration: underline;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-bottom: 20px;/*タイトルと説明の距離*/
-    padding-left: 138px;
+.blogtitle {
+    padding-left: 100px;
+}
+
+.publishedAt {
+    padding-left: 100px;
     line-height: 1.5em;
 }
 
-.publishedAt{
-    font-size: 24px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-left: 138px;
-    line-height: 1.5em;
-}
-
-.blog{
+.blog {
     background-color: #fffff1;
 }
 
-.titlecontent{
+.titlecontent {
     padding-top: 80px;
     padding-bottom: 30px;
 }
 
-.titletext{
-    font-size: 40px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-left: 138px;
+.titletext {
+    padding-left: 100px;
 }
 
 .line {
@@ -45,14 +34,54 @@
     margin-top: 0;
 }
 
-.eyecatch{
+.eyecatch {
     text-align: center;
-
 }
 
-.bloghtml{
+.bloghtml {
     padding-top: 20px;
-    padding-left: 138px;
-    padding-right: 138px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 10px;
 }
+
+@media (max-width:1000px) {
+    .titletext {
+        padding-left: 50px;
+    }
+    .blogtitle {
+        padding-left: 50px;
+    }
+    
+    .publishedAt {
+        padding-left: 50px;
+        line-height: 1.5em;
+    }
+    .bloghtml {
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .titletext {
+        padding-left: 10px;
+    }
+    .blogtitle {
+        padding-left: 10px;
+    }
+    
+    .publishedAt {
+        padding-left: 10px;
+        line-height: 1.5em;
+    }
+    .bloghtml {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+  }

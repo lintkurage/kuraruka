@@ -5,9 +5,6 @@ css
 @charset "UTF-8";
 
 .content {
-    padding-bottom: 20px;
-    padding-left: 138px;
-    padding-right: 138px;
     background-color: #fffff1;
 }
 
@@ -17,17 +14,25 @@ css
 }
 
 .pagenationbutton{
-        display: inline-block; /* ボタンを横並びにする */
-        border: none; /* 枠線をなくす */
-        border-radius: 5px; /* 角丸をつける */
-        padding: 10px 15px; /* ボタンの内側の余白 */
-        margin: 5px; /* ボタン同士の余白 */
-        background-color: #5bdef8; /* ボタンの背景色 */
-        color: #000000; /* ボタンの文字色 */
-        text-align: center; /* ボタンのテキストを中央揃えにする */
-        text-decoration: none; /* テキストに下線をつけない */
-        font-size: 15px; /* テキストのフォントサイズ */
-        cursor: pointer; /* マウスポインタを変更する */
+        display: inline-block; 
+        border: none; 
+        border-radius: 5px; 
+        padding: 10px 15px;
+        margin: 5px; 
+        background-color: #5bdef8; 
+        color: #000000; 
+        text-align: center; 
+        text-decoration: none; 
+        font-size: 18px;
+        cursor: pointer; 
         width: 60px;
         font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+@media (max-width:768px) {
+    .pagenationbutton{
+        padding: 5px 10px;
+        width: 30px;
+        font-size: 9px; 
+        }
 }

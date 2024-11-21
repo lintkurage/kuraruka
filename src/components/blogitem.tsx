@@ -1,4 +1,5 @@
 import { BlogType } from "src/types/blog";
+import {useState,useEffect} from "react";
 import { format } from "date-fns"
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,23 @@ interface BlogItemProps {
 
 const BlogItem = ({ blog }: BlogItemProps) => {
     const categoryColor = blog.category.color || "gray"
+    const imagewidth=400
+    const imagehight=240
+    const modilesize=768
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // 初期判定
+        const updateMobileView = () => {
+            setIsMobile(window.innerWidth <= modilesize); 
+        };
+
+        updateMobileView();
+        // リサイズイベントリスナー
+        window.addEventListener("resize", updateMobileView);
+        return () => window.removeEventListener("resize", updateMobileView);
+    }, []);
 
     return (
         <div className={styles.content}>
@@ -20,17 +38,18 @@ const BlogItem = ({ blog }: BlogItemProps) => {
                         <Link href={`/blog/${blog.slug}`} className={styles.link}>
                             <Image
                                 src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"}
-                                width={400}
-                                height={200}
+                                width={imagewidth}
+                                height={imagehight}
                                 alt="image"
                                 className={styles.image}
+                                layout={isMobile ? "intrinsic" : "none"}
                             />
                         </Link>
                     </div>
                     <div className={styles.namecontents}>
-                        <div>
+                        <div  className={styles.nametitle}>
                             <Link href={`/blog/${blog.slug}`} className={styles.link}>
-                                <h1 className={styles.nametitle}>{blog.title}</h1>
+                                <h2>{blog.title}</h2>
                             </Link>
                         </div>
                         <div>
