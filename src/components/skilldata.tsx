@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import {
     Radar,
     RadarChart,
@@ -50,6 +50,23 @@ const categoryColors: { [key: string]: string } = {
 };
 
 const SkillData: React.FC = () => {
+
+    const modilesize=768
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        // 初期判定
+        const updateMobileView = () => {
+            setIsMobile(window.innerWidth <= modilesize); 
+        };
+
+        updateMobileView();
+        // リサイズイベントリスナー
+        window.addEventListener("resize", updateMobileView);
+        return () => window.removeEventListener("resize", updateMobileView);
+    }, []);
+
     const [selectedCategory, setSelectedCategory] = useState<'frontend' | 'backend' | 'tool'>('frontend');
 
     const toggleData = (category: 'frontend' | 'backend' | 'tool') => {
@@ -72,6 +89,12 @@ const SkillData: React.FC = () => {
     const currentData = getData();
     const currentColor = categoryColors[selectedCategory];
 
+    let radarmargin=60
+
+    if(isMobile==true){
+        radarmargin=50
+    }
+
     return (
         <>
             <div className={styles.textcontents}>
@@ -81,15 +104,25 @@ const SkillData: React.FC = () => {
             <div className={styles.contents}>
                 <div>
                 <div className={styles.skillcontents}>
-                    <h2 className={styles.skilltext}>{selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Skills</h2>
-                    <p className={styles.skillcomments}>これまでに身につけたスキルをレーダーグラフにまとめまてみました。広く浅くですがフロントエンドからバックエンドまで幅広くスキルの上に取り組んでいます。特段これが強みというものはありませが、
+                    <h2>{selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Skills</h2>
+                    <div className={styles.skillcomments}>
+                    <p>これまでに身につけたスキルをレーダーグラフにまとめまてみました。広く浅くですがフロントエンドからバックエンドまで幅広くスキルの上に取り組んでいます。特段これが強みというものはありませが、
                         オールランダーを目指して日々研鑽を積んでいます。幅広く、モダンな技術、知識を持ち、人に喜んでもらえるものを作る発想力がある点が強みであると感じています。
                         ただ、専門性の低さを課題としており、特にフレームワーク、バックエンド、機械学習/AI、グラフィックデザインについての専門性を高めていきたいと考えています。
                     </p>
+                    </div>
                 </div>
                     <div>
-                        <ResponsiveContainer width="100%" height={400}>
-                            <RadarChart cx="50%" cy="50%" outerRadius="80%" data={currentData}>
+                        <ResponsiveContainer width="100%" height={isMobile ? 200 : 400} className={styles.recharts}>
+                            <RadarChart
+                             cx="50%" cy="50%" outerRadius="100%" data={currentData} 
+                             margin={{
+                                top: radarmargin,
+                                right: radarmargin,
+                                bottom: radarmargin,
+                                left: radarmargin,
+                              }}
+                             >
                                 <PolarGrid />
                                 <PolarAngleAxis dataKey="subject" />
                                 <PolarRadiusAxis domain={[0, 5]} />
@@ -105,13 +138,13 @@ const SkillData: React.FC = () => {
                     </div>
                     <div className={styles.buttoncontents}>
                         <button className={styles.toggleButtonfront} onClick={() => toggleData('frontend')}>
-                            Frontend Skills
+                            <p>Frontend</p>
                         </button>
                         <button className={styles.toggleButtonback} onClick={() => toggleData('backend')}>
-                            Backend Skills
+                            <p>Backend</p>
                         </button>
                         <button className={styles.toggleButtontool} onClick={() => toggleData('tool')}>
-                            Tools
+                            <p>Tools</p>
                         </button>
                     </div>
                 </div>

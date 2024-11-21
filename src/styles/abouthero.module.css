@@ -15,8 +15,8 @@
 
 .contents{
     padding-top: 20px;
-    padding-left: 138px;
-    padding-right: 138px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 10px;
     display: flex;
 }
@@ -27,18 +27,10 @@
 }
 
 .nametitle{
-    font-size: 30px;
     color: #000000;
     text-decoration: underline;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     padding-bottom: 20px;/*タイトルと説明の距離*/
-}
-
-.text{
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    line-height: 1.5em;
 }
 
 .portfoliolink{
@@ -49,14 +41,6 @@
 .portfoliolink:hover{
     color: #0004ff;
     opacity: 50%;
-}
-
-.contenttexth3{
-    font-size: 18px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
-        sans-serif;
-    color: #000000;
-    padding-top: 12px;
 }
 
 .link{
@@ -71,9 +55,7 @@
 
 
 .titletext{
-    font-size: 40px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-left: 138px;
+    padding-left: 100px;
     padding-top: 80px;/*headerと文字の距離*/
 }
 
@@ -83,3 +65,26 @@
     height: 2px;
     margin-top: 0;
 }
+
+@media (max-width:1000px) {
+    .contents{
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+
+    .titletext{
+        padding-left: 50px;
+        padding-top: 80px;/*headerと文字の距離*/
+    }
+  }
+
+@media (max-width:768px) {
+    .link{
+        font-size: 9px;
+    }
+    .portfoliolink{
+        font-size: 9px;
+    }
+  }

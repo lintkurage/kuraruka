@@ -19,6 +19,7 @@ export default function Abouthero() {
                                 width={300}
                                 height={300}
                                 alt="kurarukacharactericon"
+                                layout="responsive"
                             />
                         </div>
                         <div className={styles.textcontents}>
@@ -27,21 +28,21 @@ export default function Abouthero() {
                             </div>
 
                             <div className={styles.explanation}>
-                                <p className={styles.text}>温泉といるか、くらげをこよなく愛する理系大学生・エンジニア、1月生まれ</p>
-                                <p className={styles.text}>専攻 : 情報学</p>
-                                <p className={styles.text}>得意分野 : デジタルファブリケーション、メディア表現、Web技術、電気</p>
-                                <p className={styles.text}>学習中 : 機械学習/AI、モーションキャプチャー、感性工学、UI/UX</p>
-                                <p className={styles.text}>3Dプリンターやレーザーカッターなどを駆使してたものづくり、ゲームやWebアプリケーション制作、</p>
-                                <p className={styles.text}>音楽制作など多岐にわたる活動を行っています</p>
-                                <p className={styles.text}>アイコンはてまりまろさんに描いていただきました</p>
-                                <p className={styles.text}>今やりたいことは、温泉地紹介本制作、制作物販売など</p>
-                                <p className={styles.text}>好きなこと : 旅行・温泉地巡り、ものづくり、ゲーム</p>
-                                <p className={styles.text}>好きなゲーム : スーパーマリオ3、星のカービィシリーズ</p>
-                                <p className={styles.text}>ポートフォリオページは<Link href="/portfolio" className={styles.portfoliolink}>こちら</Link>からどうぞ</p>
-                                <p className={styles.contenttexth3}>X(旧Twitter) : <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
-                                <p className={styles.contenttexth3}>Git Hub : <Link href="https://github.com/lintkurage" className={styles.link}>https://github.com/lintkurage</Link></p>
-                                <p className={styles.contenttexth3}>YouTube : <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
-                                <p className={styles.contenttexth3}>HP : <Link href="/index.html" className={styles.link}>https</Link></p>
+                                <p>温泉といるか、くらげをこよなく愛する理系大学生・エンジニア、1月生まれ</p>
+                                <p>専攻 : 情報学</p>
+                                <p>得意分野 : デジタルファブリケーション、メディア表現、Web技術、電気</p>
+                                <p>学習中 : 機械学習/AI、モーションキャプチャー、感性工学、UI/UX</p>
+                                <p>3Dプリンターやレーザーカッターなどを駆使してたものづくり、ゲームやWebアプリケーション制作、</p>
+                                <p>音楽制作など多岐にわたる活動を行っています</p>
+                                <p>アイコンはてまりまろさんに描いていただきました</p>
+                                <p>今やりたいことは、温泉地紹介本制作、制作物販売など</p>
+                                <p>好きなこと : 旅行・温泉地巡り、ものづくり、ゲーム</p>
+                                <p>好きなゲーム : スーパーマリオ3、星のカービィシリーズ</p>
+                                <p>ポートフォリオページは<Link href="/portfolio" className={styles.portfoliolink}>こちら</Link>からどうぞ</p>
+                                <p>X(旧Twitter) : <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
+                                <p>Git Hub : <Link href="https://github.com/lintkurage" className={styles.link}>https://github.com/lintkurage</Link></p>
+                                <p>YouTube : <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
+                                <p>HP : <Link href="/index.html" className={styles.link}>https</Link></p>
                             </div>
                         </div>
                     </div>

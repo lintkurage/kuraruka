@@ -1,0 +1,87 @@
+/*
+    css
+    [slug].tsx用のcssです
+*/
+
+@charset "UTF-8";
+
+.blogtitle {
+    padding-left: 100px;
+}
+
+.publishedAt {
+    padding-left: 100px;
+    line-height: 1.5em;
+}
+
+.blog {
+    background-color: #fffff1;
+}
+
+.titlecontent {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.titletext {
+    padding-left: 100px;
+}
+
+.line {
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    margin-top: 0;
+}
+
+.eyecatch {
+    text-align: center;
+}
+
+.bloghtml {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:1000px) {
+    .titletext {
+        padding-left: 50px;
+    }
+    .blogtitle {
+        padding-left: 50px;
+    }
+    
+    .publishedAt {
+        padding-left: 50px;
+        line-height: 1.5em;
+    }
+    .bloghtml {
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .titletext {
+        padding-left: 10px;
+    }
+    .blogtitle {
+        padding-left: 10px;
+    }
+    
+    .publishedAt {
+        padding-left: 10px;
+        line-height: 1.5em;
+    }
+    .bloghtml {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+  }

@@ -1,12 +1,12 @@
 /*
-    css
+css
 */
 
 @charset "UTF-8";
 
-.contents{
+.content{
     background-color: #fffff1;
-    padding-top: 20px;
+    padding-top: 100px;
     text-align: center;
     padding-bottom: 750px;
 }

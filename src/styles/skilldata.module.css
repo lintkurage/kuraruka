@@ -4,24 +4,22 @@
 */
 @charset "UTF-8";
 
-.contents{
-    padding-left: 138px;
-    padding-right: 138px;
+.contents {
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 10px;
     background-color: #fffff1;
 }
 
-.textcontents{
+.textcontents {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-color: #fffff1;
     /*クリーム色#fafde7*/
 }
 
-.titletext{
-    font-size: 40px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-left: 138px;
+.titletext {
+    padding-left: 100px;
 }
 
 .line {
@@ -32,11 +30,9 @@
 }
 
 /*front*/
-.toggleButtonfront{
+.toggleButtonfront {
     margin: 10px;
-    padding: 10px 20px;
-    height: 35px;
-    width: 140px;
+    padding: 1% 2%;
     background-color: #5bdef8;
     color: rgb(0, 0, 0);
     border: none;
@@ -48,11 +44,9 @@
     background-color: #2cd7fa;
 }
 /*back*/
-.toggleButtonback{
+.toggleButtonback {
     margin: 10px;
-    padding: 10px 20px;
-    height: 35px;
-    width: 140px;
+    padding: 1% 2%;
     background-color: #80fba1;
     color: rgb(0, 0, 0);
     border: none;
@@ -64,11 +58,9 @@
     background-color: #49fc79;
 }
 /*tool*/
-.toggleButtontool{
+.toggleButtontool {
     margin: 10px;
-    padding: 10px 20px;
-    height: 35px;
-    width: 140px;
+    padding: 1% 2%;
     background-color: #f6746e;
     color: rgb(0, 0, 0);
     border: none;
@@ -80,45 +72,49 @@
     background-color: #f7433a;
 }
 
-.buttoncontents{
+.buttoncontents {
     text-align: center;
 }
 
-.skillsettext{
-    text-align: left;
-    font-size: 24px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-bottom: 20px;/*タイトルと説明の距離*/
-}
-
-.skillcontents{
+.skillcontents {
     text-align: center;
-    margin-bottom: '20px' ;
+    margin-bottom: "20px";
 }
 
-.skilltext{ 
-    font-size: 30px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-}
-
-.charttext{
+.charttext {
     text-align: center;
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     padding-top: 20px;
-    padding-bottom: 20px;/*タイトルと説明の距離*/
-    line-height: 1.5em;
+    padding-bottom: 20px; 
 }
 
-.skillcomments{
-    text-align: left;
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+.skillcomments {
     padding-top: 20px;
-    padding-bottom: 20px;/*タイトルと説明の距離*/
-    line-height: 1.5em;
+    padding-bottom: 20px; 
 }
+
+@media (max-width:1000px) {
+    .contents {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .titletext {
+        padding-left: 50px;
+    }
+  }
+
+@media (max-width:768px) {
+    .contents {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .titletext {
+        padding-left: 10px;
+    }
+    .textcontents {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .recharts{
+        margin: 0 auto;
+    }
+  }

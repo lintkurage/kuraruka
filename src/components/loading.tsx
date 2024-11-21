@@ -3,8 +3,8 @@ import styles from '../styles/loading.module.css'
 
 export default function Loading() {
     return (
-        <div >
-            <p className={styles.text}>Now Loading...</p>
+        <div>
+            <h1 className={styles.contents}>Now Loading...</h1>
         </div>
     );
 }

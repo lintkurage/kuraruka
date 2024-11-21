@@ -6,8 +6,8 @@
 
 .content {
     padding-bottom: 20px;
-    padding-left: 138px;
-    padding-right: 138px;
+    padding-left: 100px;
+    padding-right: 100px;
     background-color: #fffff1;
 }
 
@@ -21,26 +21,15 @@
 }
 
 .nametitle {
-    font-size: 30px;
-    color: #000000;
-    text-decoration: underline;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
-        sans-serif;
     padding-bottom: 10px; /*タイトルと説明の距離*/
     line-height: 1.5em;
 }
 
 .namecontents {
-    padding-left: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.text {
-    font-size: 18px;
-    color: #000000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
-        sans-serif;
-    line-height: 1.5em;
-}
 
 .summarycontents {
     padding-top: 10px;
@@ -54,3 +43,26 @@
 .image {
     border-radius: 15px;
 }
+
+
+@media (max-width:1000px) {
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+  }
+
+@media (max-width:768px) {
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .namecontents {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .blogcontents {
+        display: block;
+    }
+  }
