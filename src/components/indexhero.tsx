@@ -13,11 +13,11 @@ export default function Indexhero() {
                 <div className={styles.headertopmain}>
                     <div className={styles.image}>
                         <Image
+                            className={styles.img}
                             src="/marinindex.jpg"
                             width={mainimagewidth}
                             height={mainimagehight}
                             alt="index1"
-                            layout="responsive"
                         />
                     </div>
                 </div>
