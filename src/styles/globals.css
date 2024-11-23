@@ -189,7 +189,7 @@ pre {
 /* <code> タグのスタイル */
 code {
 	font-family: "Courier New", monospace; /* 等幅フォント */
-	color: #37f276; /* 文字色（目立つ色に） */
+	color: #ffffff; /* 文字色（目立つ色に）#37f276 */
 	padding: 0.2rem 0.4rem; /* 小さな余白 */
 	border-radius: 4px; /* 角を丸く */
 	line-height: 1em;
@@ -202,9 +202,8 @@ figure {
 }
 
 img{
-	width: 60vw;
+	width: 90vw;
 	height: auto;
-	border-radius: 15px;
 }
 
 .line {
@@ -217,8 +216,6 @@ img{
 ul,
 ol {
 	color: #1e366a;
-	border-top: solid #1e366a 1px; /*上のボーダー*/
-	border-bottom: solid #1e366a 1px; /*下のボーダー*/
 	padding: 0.5em 0 0.5em 1.5em;
 }
 

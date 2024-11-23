@@ -8,7 +8,7 @@
     padding-bottom: 20px;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: #fffff1;
+    background-color: #ffffff;
 }
 
 .blogcontents {
@@ -41,6 +41,8 @@
 }
 
 .image {
+    width: 40vw;
+    height: auto;
     border-radius: 15px;
 }
 
@@ -53,6 +55,11 @@
   }
 
 @media (max-width:768px) {
+    .image {
+        width: 90vw;
+        height: auto;
+        border-radius: 15px;
+    }
     .content {
         padding-left: 10px;
         padding-right: 10px;

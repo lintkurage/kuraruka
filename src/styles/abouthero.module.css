@@ -5,7 +5,7 @@
 
 .hero {
     padding-top: 0px;
-    background-color: #fffff1;
+    background-color: #ffffff;
 }
 
 .heropos{
@@ -56,7 +56,7 @@
 
 .titletext{
     padding-left: 100px;
-    padding-top: 80px;/*headerと文字の距離*/
+    padding-top: 60px;/*headerと文字の距離*/
 }
 
 .line {
@@ -76,7 +76,6 @@
 
     .titletext{
         padding-left: 50px;
-        padding-top: 80px;/*headerと文字の距離*/
     }
   }
 
@@ -86,5 +85,9 @@
     }
     .portfoliolink{
         font-size: 9px;
+    }
+    .titletext{
+        padding-left: 10px;
+        padding-top: 60px;
     }
   }

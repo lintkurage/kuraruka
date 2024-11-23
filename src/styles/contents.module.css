@@ -9,12 +9,11 @@
     padding-top: 10px;
 }
 
-.imagecontents {
-    width: 500px; /* 必要に応じて調整 */
-    height: auto;
-}
+
 
 .image {
+    width: 40vw;
+    height: auto;
     border-radius: 15px;
     object-fit: cover; /* 必要に応じて調整 */
 }
@@ -29,7 +28,7 @@
 }
 
 .contents {
-    background-color: #fffff1;
+    background-color: #ffffff;
 }
 
 .workscontents {
@@ -95,6 +94,14 @@
         width: 350px; /* 必要に応じて調整 */
         height: auto;
     }
+    .image {
+        width: 90vw;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover; /* 必要に応じて調整 */
+    }
+
+
     .titletext {
         padding-left: 10px;
         padding-top: 10px;

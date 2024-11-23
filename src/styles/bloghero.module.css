@@ -7,12 +7,12 @@
 .content{
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: #fffff1;
+    background-color: #ffffff;
 }
 
 .titletext{
     padding-left: 100px;
-    padding-top: 80px;/*headerと文字の距離*/
+    padding-top: 60px;/*headerと文字の距離*/
 }
 
 .line {
@@ -25,7 +25,7 @@
 @media (max-width:1000px) {
     .titletext{
         padding-left: 50px;
-        padding-top: 80px;/*headerと文字の距離*/
+        padding-top: 60px;/*headerと文字の距離*/
     }
   }
 
