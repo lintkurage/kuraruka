@@ -18,23 +18,23 @@ interface DataPoint {
 const frontdata: DataPoint[] = [
     { subject: 'HTML5', A: 4, fullMark: 5 },
     { subject: 'CSS', A: 3, fullMark: 5 },
-    { subject: 'Vuejs', A: 3, fullMark: 5 },
-    { subject: 'JavaScript/TypeScript', A: 4, fullMark: 5 },
-    { subject: 'React', A: 4, fullMark: 5 },
-    { subject: 'Next.js', A: 4, fullMark: 5 },
+    { subject: 'Vuejs', A: 2, fullMark: 5 },
+    { subject: 'JavaScript/TypeScript', A: 3, fullMark: 5 },
+    { subject: 'React', A: 3, fullMark: 5 },
+    { subject: 'Next.js', A: 3, fullMark: 5 },
 ];
 
 const backdata: DataPoint[] = [
     { subject: 'Python', A: 3, fullMark: 5 },
-    { subject: 'Node.js', A: 4, fullMark: 5 },
+    { subject: 'Node.js', A: 3, fullMark: 5 },
     { subject: 'Ruby', A: 3, fullMark: 5 },
     { subject: 'SQL', A: 3, fullMark: 5 },
-    { subject: 'C/C++', A: 3, fullMark: 5 },
+    { subject: 'C/C++', A: 4, fullMark: 5 },
     { subject: 'C#', A: 3, fullMark: 5 },
 ];
 
 const tooldata: DataPoint[] = [
-    { subject: 'Illustrator', A: 3, fullMark: 5 },
+    { subject: 'Illustrator', A: 4, fullMark: 5 },
     { subject: 'Photoshop', A: 3, fullMark: 5 },
     { subject: 'Premiere Pro', A: 3, fullMark: 5 },
     { subject: 'Git/Git Hub', A: 3, fullMark: 5 },
@@ -86,8 +86,22 @@ const SkillData: React.FC = () => {
         }
     }
 
+    const getDataColor=()=>{
+        switch (selectedCategory) {
+            case 'frontend':
+                return "frontmarker";
+            case 'backend':
+                return "backmarker";
+            case 'tool':
+                return "toolmarker";
+            default:
+                return "frontmarker";
+        }
+    }
+
     const currentData = getData();
     const currentColor = categoryColors[selectedCategory];
+    const markercolor=getDataColor();
 
     let radarmargin=60
 
@@ -104,7 +118,7 @@ const SkillData: React.FC = () => {
             <div className={styles.contents}>
                 <div>
                 <div className={styles.skillcontents}>
-                    <h2>{selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Skills</h2>
+                    <h2><span className={markercolor}>{selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Skills</span></h2>
                     <div className={styles.skillcomments}>
                     <p>これまでに身につけたスキルをレーダーグラフにまとめまてみました。広く浅くですがフロントエンドからバックエンドまで幅広くスキルの上に取り組んでいます。特段これが強みというものはありませが、
                         オールランダーを目指して日々研鑽を積んでいます。幅広く、モダンな技術、知識を持ち、人に喜んでもらえるものを作る発想力がある点が強みであると感じています。

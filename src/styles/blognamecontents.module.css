@@ -1,0 +1,48 @@
+/*
+   herocss
+*/
+@charset "UTF-8";
+
+.contents{
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.name{
+    background: linear-gradient(transparent 50%, #90f0f9 30%);
+}
+
+.box{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
+}
+
+.link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link:hover{
+    color: #0004ff;
+    opacity: 50%;
+}
+
+@media (max-width:1000px) {
+    
+    .contents{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    
+    .contents{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }

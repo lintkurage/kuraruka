@@ -24,7 +24,7 @@ export default function Abouthero() {
                         </div>
                         <div className={styles.textcontents}>
                             <div>
-                                <h2 className={styles.nametitle}>iruka2kurage(いるかとくらげ)</h2>
+                                <h2 className={styles.nametitle}><span className="marker">iruka2kurage(いるかとくらげ)</span></h2>
                             </div>
 
                             <div className={styles.explanation}>
@@ -35,13 +35,14 @@ export default function Abouthero() {
                                 <p>3Dプリンターやレーザーカッターなどを駆使してたものづくり、ゲームやWebアプリケーション制作、</p>
                                 <p>音楽制作など多岐にわたる活動を行っています</p>
                                 <p>アイコンはてまりまろさんに描いていただきました</p>
+                                <p>てまりまろさんのXアカウント:<Link href="https://x.com/temariame14" className={styles.link}>https://x.com/temariame14</Link></p>
                                 <p>今やりたいことは、温泉地紹介本制作、制作物販売など</p>
                                 <p>好きなこと : 旅行・温泉地巡り、ものづくり、ゲーム</p>
                                 <p>好きなゲーム : スーパーマリオ3、星のカービィシリーズ</p>
-                                <p>ポートフォリオページは<Link href="/portfolio" className={styles.portfoliolink}>こちら</Link>からどうぞ</p>
-                                <p>X(旧Twitter) : <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
+                                <p>ポートフォリオページは絶賛制作中です{/*<Link href="/portfolio" className={styles.portfoliolink}>こちら</Link>からどうぞ*/}</p>
+                                <p>X(旧Twitter) : <Link href="https://x.com/lintkurage" className={styles.link}>https://x.com/lintkurage</Link></p>
                                 <p>Git Hub : <Link href="https://github.com/lintkurage" className={styles.link}>https://github.com/lintkurage</Link></p>
-                                <p>YouTube : <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
+                                <p>YouTube : <Link href="https://x.gd/cxtfQ" className={styles.link}>https://x.gd/cxtfQ</Link></p>
                                 <p>HP : <Link href="/index.html" className={styles.link}>https</Link></p>
                             </div>
                         </div>

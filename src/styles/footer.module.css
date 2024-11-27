@@ -11,15 +11,15 @@
 }
 
 .footercontents{
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
 @media (max-width:768px) {
     .footercontents{
-        padding-top: 10px;
-        padding-bottom: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .licensetext{
         font-size: 12px;

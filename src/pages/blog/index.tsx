@@ -6,6 +6,7 @@ import { BlogType } from '@/types/blog';
 import Loading from 'src/components/loading';
 import Bloghero from 'src/components/bloghero';
 import styles from "src/styles/blogindex.module.css"
+import Metadata from 'src/components/meta';
 
 const Blog = () => {
   const [blogs, setBlogs] = useState<BlogType[]>([]);
@@ -55,29 +56,38 @@ const Blog = () => {
 
   if (loading) {
     return (
-      <Layout title="Blogページです">
-        <Bloghero></Bloghero>
-        <Loading />
-      </Layout>
+      <>
+        <Metadata title='くらるかブログ/kuraruka blog' content='iruka2kurage(kuraruka)のブログページです.'></Metadata>
+        <Layout title="Blogページです">
+          <Bloghero></Bloghero>
+          <Loading />
+        </Layout>
+      </>
     );
   }
 
   if (error) {
     return (
+      <>
+      <Metadata title='くらるかブログ/kuraruka blog' content='iruka2kurage(kuraruka)のブログページです.'></Metadata>
       <Layout title="Blogページです">
         <Bloghero></Bloghero>
         <div className={styles.content}>
           <h1>{error}</h1> {/* エラーメッセージを表示 */}
         </div>
       </Layout>
+      </>
     );
   }
 
   return (
+    <>
+    <Metadata title='くらるかブログ/kuraruka blog' content='iruka2kurage(kuraruka)のブログページです.'></Metadata>
     <Layout title="Blogページです">
       <Bloghero></Bloghero>
       <Blogs blogs={blogs} />
     </Layout>
+    </>
   );
 };
 
