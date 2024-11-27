@@ -5,6 +5,8 @@ import { BlogType } from '../../types/blog'; // 型のインポート
 import Image from 'next/image';
 import Layout from 'src/components/layout'
 import styles from "src/styles/blog.module.css"
+import Metadata from 'src/components/meta';
+import BlognameContents from 'src/components/blognamecontents';
 
 interface ArticleProps {
     article: BlogType; // 取得する記事データに型を適用
@@ -20,6 +22,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
 
     return (
         <div className={styles.blog}>
+            <Metadata title={article.title} content={article.summary}></Metadata>
             <Layout>
                 <div>
                     <div className={styles.titlecontent}>
@@ -48,6 +51,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
                         <div dangerouslySetInnerHTML={{ __html: article.content }} />
                     </div>
                 </div>
+                <BlognameContents></BlognameContents>
             </Layout>
         </div>
     );

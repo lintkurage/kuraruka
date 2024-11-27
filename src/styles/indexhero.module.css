@@ -5,17 +5,17 @@
 
 .image {
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .img{
-    width: 100vw;
-    height: 500px;
+    width: 90vw;
+    height: auto;
 }
 
 .hero {
     padding-top: 50px;
-    background-color: rgba(91, 222, 248, 0.6);
+    background-color: #ffffff;
 }
 
 .profilearea {

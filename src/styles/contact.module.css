@@ -40,6 +40,20 @@ css
     padding-bottom: 20px;
 }
 
+.works{
+    padding-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.link:hover{
+    color: #0004ff;
+    opacity: 50%;
+}
+
 @media (max-width:1000px) {
     .titletext{
         padding-left: 50px;
@@ -54,6 +68,9 @@ css
 
 
   @media (max-width: 768px) {
+    .link{
+        font-size: 9px;
+    }
     .titletext{
         padding-top: 60px;
         padding-left: 10px;

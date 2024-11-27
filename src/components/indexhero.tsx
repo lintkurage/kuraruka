@@ -14,7 +14,7 @@ export default function Indexhero() {
                     <div className={styles.image}>
                         <Image
                             className={styles.img}
-                            src="/marinindex.jpg"
+                            src="/kurarukahero.png"
                             width={mainimagewidth}
                             height={mainimagehight}
                             alt="index1"
@@ -30,10 +30,10 @@ export default function Indexhero() {
                     <div className={styles.content}>
                         <p>温泉といるか、くらげをこよなく愛する理系大学生。</p>
                         <p>専門はデジタルファブリケーション。その他、Webフロントエンド開発、ゲームや音楽制作等行っています。</p>
-                        <p>人々にくすっと笑ってもらえるものを作ります。</p>
-                        <p>X(旧Twitter): <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
+                        <p>人々にくすっと笑ってもらえるものを作っています。</p>
+                        <p>X(旧Twitter): <Link href="https://x.com/lintkurage" className={styles.link}>https://x.com/lintkurage</Link></p>
                         <p >Git Hub: <Link href="https://github.com/lintkurage" className={styles.link}>https://github.com/lintkurage</Link></p>
-                        <p>YouTube: <Link href="/contact" className={styles.link}>https://github.com/lintkurage</Link></p>
+                        <p>YouTube: <Link href="https://x.gd/cxtfQ" className={styles.link}>hhttps://x.gd/cxtfQ</Link></p>
                     </div>
                 </div>
             </div>

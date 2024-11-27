@@ -8,12 +8,12 @@
     background-color: #ffffff;
 }
 
-.heropos{
+.heropos {
     text-align: center;
     padding-top: 20px;
 }
 
-.contents{
+.contents {
     padding-top: 20px;
     padding-left: 100px;
     padding-right: 100px;
@@ -21,42 +21,38 @@
     display: flex;
 }
 
-.textcontents{
+.textcontents {
     padding-left: 50px;
     text-align: left;
 }
 
-.nametitle{
-    color: #000000;
-    text-decoration: underline;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    padding-bottom: 20px;/*タイトルと説明の距離*/
+.nametitle {
+    padding-bottom: 20px; /*タイトルと説明の距離*/
 }
 
-.portfoliolink{
+.portfoliolink {
     color: #f41f1f;
     text-decoration: none;
 }
 
-.portfoliolink:hover{
+.portfoliolink:hover {
     color: #0004ff;
     opacity: 50%;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: #000000;
 }
 
-.link:hover{
+.link:hover {
     color: #0004ff;
     opacity: 50%;
 }
 
-
-.titletext{
+.titletext {
     padding-left: 100px;
-    padding-top: 60px;/*headerと文字の距離*/
+    padding-top: 60px; /*headerと文字の距離*/
 }
 
 .line {
@@ -66,28 +62,28 @@
     margin-top: 0;
 }
 
-@media (max-width:1000px) {
-    .contents{
+@media (max-width: 1000px) {
+    .contents {
         padding-top: 20px;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 10px;
     }
 
-    .titletext{
+    .titletext {
         padding-left: 50px;
     }
-  }
+}
 
-@media (max-width:768px) {
-    .link{
+@media (max-width: 768px) {
+    .link {
         font-size: 9px;
     }
-    .portfoliolink{
+    .portfoliolink {
         font-size: 9px;
     }
-    .titletext{
+    .titletext {
         padding-left: 10px;
         padding-top: 60px;
     }
-  }
+}
