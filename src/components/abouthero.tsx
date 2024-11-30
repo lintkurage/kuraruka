@@ -19,6 +19,7 @@ export default function Abouthero() {
                                 width={300}
                                 height={300}
                                 alt="kurarukacharactericon"
+                                className={styles.image}
                                 layout="responsive"
                             />
                         </div>

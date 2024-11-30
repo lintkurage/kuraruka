@@ -87,7 +87,6 @@ export default function Contents() {
                                 <h3 className={styles.useingsofttext}>使用機材・技術</h3>
                                 <p>機材 : MacBook Pro , Bambu X1 Carbon</p>
                                 <p>材料 : PLAフィラメント , 鉄パイプ , ランプレセプタクル(E17型) , VVF-1.6-2 , コネクタ類 </p>
-                                <p>グラフィック・UI/UX・デザイン : Autodesk Fusion</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +96,7 @@ export default function Contents() {
                 <div className={styles.workscontents}>
                     <div className={styles.imagecontents}>
                             <Image
-                                src="/indexkurage.jpg"
+                                src="/modelingeyecatch.png"
                                 width={imagewidth}
                                 height={imagehight}
                                 alt="works01"
@@ -112,12 +111,11 @@ export default function Contents() {
                             <p>研究室にある3Dプリンターを使用して制作しました。</p>
                             <p>くらげよりたこに見えてしまったのが心残りではあるが足を動かすためのひんじ作成をこだわりました</p>
                             <p>ひんじの隙間について最適な大きさがわかるようにモデルも製作してみました</p>
-                            <p>制作した記事は<Link href="/portfolio" className={styles.portfoliolink}>こちら</Link></p>
+                            <p>制作した記事は<Link href="/blog/kuragepod" className={styles.portfoliolink}>こちら</Link></p>
                             <div>
                                 <h3 className={styles.useingsofttext}>使用機材・技術</h3>
                                 <p >機材 : MacBook Pro , Bambu X1 Carbon,Bambu P1S</p>
                                 <p >材料 : PLAフィラメント </p>
-                                <p >グラフィック・UI/UX・デザイン : Autodesk Fusion</p>
                             </div>
                         </div>
                     </div>
