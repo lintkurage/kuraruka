@@ -16,13 +16,12 @@
 .heropos {
     text-align: center;
     padding-top: 20px;
-}
-
-.contents {
-    padding-top: 20px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 10px;
+}
+
+.contents {
     display: flex;
 }
 
@@ -68,7 +67,7 @@
 }
 
 @media (max-width: 1000px) {
-    .contents {
+    .heropos {
         padding-top: 20px;
         padding-left: 50px;
         padding-right: 50px;
@@ -81,6 +80,20 @@
 }
 
 @media (max-width: 768px) {
+    .contents {
+        display: block;
+    }
+    .heropos{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    .image {
+        width: 60vw;
+        height: auto;
+        object-fit: cover; /* 必要に応じて調整 */
+    }
     .link {
         font-size: 9px;
     }
@@ -90,5 +103,9 @@
     .titletext {
         padding-left: 10px;
         padding-top: 60px;
+    }
+    .textcontents {
+        padding-left: 10px;
+        text-align: left;
     }
 }

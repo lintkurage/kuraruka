@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/indexhero.module.css"
 
 export default function Indexhero() {
@@ -12,13 +11,7 @@ export default function Indexhero() {
             <div className={styles.hero}>
                 <div className={styles.headertopmain}>
                     <div className={styles.image}>
-                        <Image
-                            className={styles.img}
-                            src="/kurarukahero.png"
-                            width={mainimagewidth}
-                            height={mainimagehight}
-                            alt="index1"
-                        />
+                        <img src="/kurarukahero.png" alt="kurarukahomepage image" className={styles.img} />
                     </div>
                 </div>
             </div>

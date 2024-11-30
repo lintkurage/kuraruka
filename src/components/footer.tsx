@@ -1,4 +1,3 @@
-import Link from "next/link"
 import React, { ReactNode } from "react";
 import styles from "../styles/footer.module.css"
 

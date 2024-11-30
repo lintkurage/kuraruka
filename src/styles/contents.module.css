@@ -90,9 +90,7 @@
 
 @media (max-width: 768px) {
     .imagecontents {
-        margin: 0 auto;
-        width: 350px; /* 必要に応じて調整 */
-        height: auto;
+        text-align: center;
     }
     .image {
         width: 90vw;

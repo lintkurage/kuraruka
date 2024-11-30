@@ -1,20 +1,19 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/contents.module.css"
 
 export default function Contents() {
     //画像の大きさパラメータ
-    const imagewidth=400
-    const imagehight=240
-    const modilesize=768
+    const imagewidth = 400
+    const imagehight = 240
+    const modilesize = 768
 
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         // 初期判定
         const updateMobileView = () => {
-            setIsMobile(window.innerWidth <= modilesize); 
+            setIsMobile(window.innerWidth <= modilesize);
         };
 
         updateMobileView();
@@ -35,18 +34,11 @@ export default function Contents() {
                 <div className={styles.workscontents}>
                     <div className={styles.imagecontents}>
                         <Link href="/blog/makewebsite">
-                            <Image
-                                src="/kurarukahero.png"
-                                width={imagewidth}
-                                height={imagehight}
-                                alt="works01"
-                                className={styles.image}
-                                layout={isMobile ? "intrinsic" : "none"}
-                            />
-                           </Link> 
+                            <img src="/kurarukahero.png" alt="works home page" className={styles.image} />
+                        </Link>
                     </div>
                     <div className={styles.textcontents}>
-                    <Link href="/blog/makewebsite"><h2><span className="marker">My Home Page</span></h2> </Link> 
+                        <Link href="/blog/makewebsite"><h2><span className="marker">My Home Page</span></h2> </Link>
                         <div className={styles.contentstext}>
                             <p>このWebサイトとポートフォリオサイトは、Nextjs+TypeScriptを用いて制作しました。</p>
                             <p>レンタルサーバーを借りて公開しているため、静的に変換して公開しています。</p>
@@ -67,17 +59,10 @@ export default function Contents() {
                 {/*くらげらんぷ*/}
                 <div className={styles.workscontents}>
                     <div className={styles.imagecontents}>
-                       <Image
-                                src="/indexkurage.jpg"
-                                width={imagewidth}
-                                height={imagehight}
-                                alt="works01"
-                                className={styles.image}
-                                layout={isMobile ? "intrinsic" : "none"}
-                            />
+                        <img src="/indexkurage.jpg" alt="work02 kurage ranpu" className={styles.image} />
                     </div>
                     <div className={styles.textcontents}>
-                            <h2><span className="marker">くらげらんぷ</span></h2>
+                        <h2><span className="marker">くらげらんぷ</span></h2>
                         <div className={styles.contentstext}>
                             <p>ものづくり活動の一環としてくらげのかたちをしたランプを作成してみました。</p>
                             <p>3Dプリンターを使用して制作しました。</p>
@@ -95,17 +80,10 @@ export default function Contents() {
                 {/* 水槽に飾るくらげ */}
                 <div className={styles.workscontents}>
                     <div className={styles.imagecontents}>
-                            <Image
-                                src="/modelingeyecatch.png"
-                                width={imagewidth}
-                                height={imagehight}
-                                alt="works01"
-                                className={styles.image}
-                                layout={isMobile ? "intrinsic" : "none"}
-                            />
+                        <img src="/modelingeyecatch.png" alt="works03 kurage pod" className={styles.image} />
                     </div>
                     <div className={styles.textcontents}>
-                            <h2><span className="marker">くらげポッド 水草Version</span></h2>
+                        <h2><span className="marker">くらげポッド 水草Version</span></h2>
                         <div className={styles.contentstext}>
                             <p>研究課題で水槽で水草を育てる際に必要となり可愛い水槽、水草の移動しやすさと育てやすさを考慮して制作しました。</p>
                             <p>研究室にある3Dプリンターを使用して制作しました。</p>
