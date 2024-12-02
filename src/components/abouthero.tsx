@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/abouthero.module.css"
 
 export default function Abouthero() {
@@ -12,8 +13,15 @@ export default function Abouthero() {
                 </div>
                 <div className={styles.heropos}>
                     <div className={styles.contents}>
-                        <div className={styles.imagecontents}>
-                            <img src="/kurarukacharacter.PNG" alt="kurarukacharactericon" className={styles.image} />
+                        <div>
+                            <Image
+                                src="/kurarukacharacter.PNG"
+                                width={300}
+                                height={300}
+                                alt="kurarukacharactericon"
+                                className={styles.image}
+                                layout="responsive"
+                            />
                         </div>
                         <div className={styles.textcontents}>
                             <div>

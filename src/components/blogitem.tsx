@@ -1,6 +1,7 @@
 import { BlogType } from "src/types/blog";
 import {useState,useEffect} from "react";
 import { format } from "date-fns"
+import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/blogitem.module.css"
 
@@ -33,9 +34,16 @@ const BlogItem = ({ blog }: BlogItemProps) => {
             <div className={styles.article}>
                 <div className={styles.blogcontents}>
 
-                    <div className={styles.imagecontents}>
+                    <div>
                         <Link href={`/blog/${blog.slug}`} className={styles.link}>
-                            <img src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"} alt={blog.title} className={styles.image}/>
+                            <Image
+                                src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"}
+                                width={imagewidth}
+                                height={imagehight}
+                                alt="image"
+                                className={styles.image}
+                                layout={isMobile ? "intrinsic" : "none"}
+                            />
                         </Link>
                     </div>
                     <div className={styles.namecontents}>
