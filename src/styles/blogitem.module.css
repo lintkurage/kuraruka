@@ -55,7 +55,9 @@
   }
 
 @media (max-width:768px) {
-
+    .imagecontents{
+        text-align: center;
+    }
     .image {
         width: 90vw;
         height: auto;

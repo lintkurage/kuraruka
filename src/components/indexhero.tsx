@@ -12,13 +12,7 @@ export default function Indexhero() {
             <div className={styles.hero}>
                 <div className={styles.headertopmain}>
                     <div className={styles.image}>
-                        <Image
-                            className={styles.img}
-                            src="/kurarukahero.png"
-                            width={mainimagewidth}
-                            height={mainimagehight}
-                            alt="index1"
-                        />
+                        <img className={styles.img} src="/kurarukahero.png" alt="index1" />
                     </div>
                 </div>
             </div>

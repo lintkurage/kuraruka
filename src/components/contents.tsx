@@ -35,14 +35,7 @@ export default function Contents() {
                 <div className={styles.workscontents}>
                     <div className={styles.imagecontents}>
                         <Link href="/blog/makewebsite">
-                            <Image
-                                src="/kurarukahero.png"
-                                width={imagewidth}
-                                height={imagehight}
-                                alt="works01"
-                                className={styles.image}
-                                layout={isMobile ? "intrinsic" : "none"}
-                            />
+                        <img src="/kurarukahero.png" alt="works01" className={styles.image}/>
                            </Link> 
                     </div>
                     <div className={styles.textcontents}>
@@ -68,14 +61,7 @@ export default function Contents() {
                 {/*くらげらんぷ*/}
                 <div className={styles.workscontents}>
                     <div className={styles.imagecontents}>
-                       <Image
-                                src="/kurarukaimage.png"
-                                width={imagewidth}
-                                height={imagehight}
-                                alt="works01"
-                                className={styles.image}
-                                layout={isMobile ? "intrinsic" : "none"}
-                            />
+                        <img src="/kurarukaimage.png" alt="works01" className={styles.image}/>
                     </div>
                     <div className={styles.textcontents}>
                             <h2><span className="marker">くらげらんぷ</span></h2>
@@ -96,14 +82,7 @@ export default function Contents() {
                 {/* 水槽に飾るくらげ */}
                 <div className={styles.workscontents}>
                     <div className={styles.imagecontents}>
-                            <Image
-                                src="/modelingeyecatch.png"
-                                width={imagewidth}
-                                height={imagehight}
-                                alt="works01"
-                                className={styles.image}
-                                layout={isMobile ? "intrinsic" : "none"}
-                            />
+                        <img src="/modelingeyecatch.png" alt="works01" className={styles.image}/>
                     </div>
                     <div className={styles.textcontents}>
                             <h2><span className="marker">くらげポッド 水草Version</span></h2>

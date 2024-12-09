@@ -1,5 +1,5 @@
 import { BlogType } from "src/types/blog";
-import {useState,useEffect} from "react";
+import { useState, useEffect } from "react";
 import { format } from "date-fns"
 import Image from "next/image";
 import Link from "next/link";
@@ -11,16 +11,16 @@ interface BlogItemProps {
 
 const BlogItem = ({ blog }: BlogItemProps) => {
     const categoryColor = blog.category.color || "gray"
-    const imagewidth=400
-    const imagehight=240
-    const modilesize=768
+    const imagewidth = 400
+    const imagehight = 240
+    const modilesize = 768
 
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         // 初期判定
         const updateMobileView = () => {
-            setIsMobile(window.innerWidth <= modilesize); 
+            setIsMobile(window.innerWidth <= modilesize);
         };
 
         updateMobileView();
@@ -36,18 +36,11 @@ const BlogItem = ({ blog }: BlogItemProps) => {
 
                     <div>
                         <Link href={`/blog/${blog.slug}`} className={styles.link}>
-                            <Image
-                                src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"}
-                                width={imagewidth}
-                                height={imagehight}
-                                alt="image"
-                                className={styles.image}
-                                layout={isMobile ? "intrinsic" : "none"}
-                            />
+                            <img src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"} alt="image" className={styles.image}/>
                         </Link>
                     </div>
                     <div className={styles.namecontents}>
-                        <div  className={styles.nametitle}>
+                        <div className={styles.nametitle}>
                             <Link href={`/blog/${blog.slug}`} className={styles.link}>
                                 <h2>{blog.title}</h2>
                             </Link>

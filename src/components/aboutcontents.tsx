@@ -33,14 +33,7 @@ export default function Aboutcontents() {
                     <div className={styles.developmentenvironment}>
                         <div className={styles.imagecontents}>
                             <Link href="/">
-                                <Image
-                                    src="/indexpengin.jpg"
-                                    width={imagewidth}
-                                    height={imagehight}
-                                    alt="works01"
-                                    layout={isMobile ? "intrinsic" : "none"}
-                                    className={styles.image}
-                                />
+                                <img src="/indexpengin.jpg" alt="works01" className={styles.image}/>
                             </Link>
                         </div>
                         <div className={styles.textcontents}>

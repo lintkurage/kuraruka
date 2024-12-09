@@ -14,14 +14,7 @@ export default function Abouthero() {
                 <div className={styles.heropos}>
                     <div className={styles.contents}>
                         <div>
-                            <Image
-                                src="/kurarukacharacter.PNG"
-                                width={300}
-                                height={300}
-                                alt="kurarukacharactericon"
-                                className={styles.image}
-                                layout="responsive"
-                            />
+                            <img src="/kurarukacharacter.PNG" alt="kurarukacharactericon" className={styles.image}/>
                         </div>
                         <div className={styles.textcontents}>
                             <div>
