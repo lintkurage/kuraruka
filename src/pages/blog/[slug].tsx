@@ -7,6 +7,8 @@ import Layout from 'src/components/layout'
 import styles from "src/styles/blog.module.css"
 import Metadata from 'src/components/meta';
 import BlognameContents from 'src/components/blognamecontents';
+import * as DOMPurify from "isomorphic-dompurify";
+
 
 interface ArticleProps {
     article: BlogType; // 取得する記事データに型を適用
@@ -48,7 +50,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
                     </div>
                     <div className={styles.bloghtml}>
                         {/* 記事内容 */}
-                        <div dangerouslySetInnerHTML={{ __html: article.content }} />
+                        <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(article.content) }} />
                     </div>
                 </div>
                 <BlognameContents></BlognameContents>
