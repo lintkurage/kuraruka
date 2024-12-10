@@ -7,6 +7,7 @@
 
 .blogtitle {
     padding-left: 100px;
+    padding-right: 100px;
 }
 
 .publishedAt {
@@ -25,6 +26,7 @@
 
 .titletext {
     padding-left: 100px;
+    padding-right: 100px;
 }
 
 .line {
@@ -48,9 +50,11 @@
 @media (max-width:1000px) {
     .titletext {
         padding-left: 50px;
+        padding-right: 50px;
     }
     .blogtitle {
         padding-left: 50px;
+        padding-right: 50px;
     }
     
     .publishedAt {
@@ -69,9 +73,11 @@
   @media (max-width: 768px) {
     .titletext {
         padding-left: 10px;
+        padding-right: 10px;
     }
     .blogtitle {
         padding-left: 10px;
+        padding-right: 10px;
     }
     
     .publishedAt {
