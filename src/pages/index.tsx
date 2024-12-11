@@ -1,4 +1,3 @@
-import Icon from 'public/kurarukaicon.svg'
 import { Inter } from 'next/font/google'
 import Layout from 'src/components/layout'
 import Indexhero from 'src/components/indexhero'

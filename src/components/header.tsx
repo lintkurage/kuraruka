@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Navi from "./navi";
 import styles from "../styles/navi.module.css"
