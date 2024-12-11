@@ -35,3 +35,10 @@ yarn-error.log*
 next-env.d.ts
 
 *storybook.log
+
+# kamal/seacrets
+/.kamal/secrets
+/.kamal/secrets-common
+
+#deploy
+/config/deploy.yml
