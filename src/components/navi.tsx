@@ -23,22 +23,22 @@ export default function Navi() {
         <ul className={`${styles.ul} ${isOpen ? styles.menuOpen : ""}`}>
           <li className={styles.li}>
             <Link href="/" className={styles.link}>
-              <p>Home</p>
+              <p className={styles.linkfont}>Home</p>
             </Link>
           </li>
           <li className={styles.li}>
             <Link href="/about" className={styles.link}>
-              <p>About</p>
+              <p className={styles.linkfont}>About</p>
             </Link>
           </li>
           <li className={styles.li}>
             <Link href="/blog" className={styles.link}>
-              <p>Blog</p>
+              <p className={styles.linkfont}>Blog</p>
             </Link>
           </li>
           <li className={styles.li}>
             <Link href="/contact" className={styles.link}>
-              <p>Contact</p>
+              <p className={styles.linkfont}>Contact</p>
             </Link>
           </li>
         </ul>

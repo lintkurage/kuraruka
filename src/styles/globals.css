@@ -201,7 +201,7 @@ figure {
 	padding-bottom: 10px;
 }
 
-img{
+img {
 	width: 60vw;
 	height: auto;
 }
@@ -221,7 +221,6 @@ ol {
 
 ul li,
 ol li {
-	line-height: 1.5;
 	font-size: 18px;
 	color: #000000;
 	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
@@ -238,57 +237,56 @@ a {
 	line-height: 1.5em;
 }
 
-blockquote{
-	position:relative;
-	border-left:3px double #4842f8;
-	padding-left:10px;
-	background:#bbf1f5;
+blockquote {
+	position: relative;
+	border-left: 3px double #4842f8;
+	padding-left: 10px;
+	background: #bbf1f5;
 	margin-bottom: 0.5em;
-  }
-  blockquote:before{
-	position:absolute;
-	content:'"';
+}
+blockquote:before {
+	position: absolute;
+	content: '"';
 	font-size: 18px;
-	color:#4842f8;
-	padding-top:10px;
-  }
-  blockquote p{
-	position:relative;
+	color: #4842f8;
+	padding-top: 10px;
+}
+blockquote p {
+	position: relative;
 	padding: 30px 10px 0px;
-  }
-  blockquote cite{
+}
+blockquote cite {
 	display: block;
-	font-size:0.8rem;
-	color:#4842f8;
-	text-align:right;
-	padding:10px;
-  }
+	font-size: 0.8rem;
+	color: #4842f8;
+	text-align: right;
+	padding: 10px;
+}
 
-  hr {
+hr {
 	margin-top: 20px;
 	border: none;
-    background-color: #000000;
-    height: 2px;
-  }
+	background-color: #000000;
+	height: 2px;
+}
 
-  .marker{
+.marker {
 	background: linear-gradient(transparent 50%, #90f0f9 30%);
-  }
+}
 
-  .frontmarker{
+.frontmarker {
 	background: linear-gradient(transparent 50%, #90f0f9 30%);
-  }
+}
 
-  .backmarker{
+.backmarker {
 	background: linear-gradient(transparent 50%, #80fba1 30%);
-  }
+}
 
-  .toolmarker{
+.toolmarker {
 	background: linear-gradient(transparent 50%, #f6746e 30%);
-  }
+}
 
-
-  @media (max-width:768px) {
+@media (max-width: 768px) {
 	p {
 		text-align: left;
 		font-size: 9px;
@@ -297,7 +295,7 @@ blockquote{
 			sans-serif;
 		line-height: 1.5em;
 	}
-	
+
 	h1 {
 		font-size: 20px;
 		color: #000000;
@@ -305,7 +303,7 @@ blockquote{
 			sans-serif;
 		line-height: 1.5em;
 	}
-	
+
 	h2 {
 		font-size: 16px;
 		color: #000000;
@@ -313,7 +311,7 @@ blockquote{
 			sans-serif;
 		line-height: 1.5em;
 	}
-	
+
 	h3 {
 		font-size: 12px;
 		color: #000000;
@@ -321,4 +319,12 @@ blockquote{
 			sans-serif;
 		line-height: 1.5em;
 	}
-  }
+	.lifont {
+		font-size: 12px;
+	}
+	ul li,
+	ol li {
+		font-size: 12px;
+		line-height: 1.2em;
+	}
+}

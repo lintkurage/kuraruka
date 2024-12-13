@@ -86,10 +86,9 @@
 
     .image{
         width:250px;
-        height:50px;
+        height:40px;
         padding-left: 0px;
     }
-
     .ul {
       display: none;
       flex-direction: column;
@@ -98,11 +97,15 @@
       top: 55px;
       right: 0px;
       background-color: rgba(91, 222, 248, 0.6);
-      padding: 20px;
+      padding: 10px;
       border-radius: 8px;
     }
   
     .hamburger {
       display: flex;
+    }
+    .linkfont{
+      color: #000000;
+      font-size: 18px;
     }
   }
