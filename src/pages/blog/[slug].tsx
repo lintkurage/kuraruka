@@ -2,7 +2,6 @@ import { client } from 'src/libs/client';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { BlogType } from '../../types/blog'; // 型のインポート
-import Image from 'next/image';
 import Layout from 'src/components/layout'
 import styles from "src/styles/blog.module.css"
 import Metadata from 'src/components/meta';
@@ -40,12 +39,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
                     <div className={styles.eyecatch}>
                         {/* 記事アイキャッチ画像 */}
                         {article.eyecatch && (
-                            <Image
-                                src={article.eyecatch.url}
-                                width={1200}
-                                height={600}
-                                alt="eyecatch"
-                            />
+                            <img src={article.eyecatch.url} alt="eyecatch" />
                         )}
                     </div>
                     <div className={styles.bloghtml}>

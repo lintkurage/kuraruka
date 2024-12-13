@@ -1,6 +1,5 @@
 import React, {useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/contents.module.css"
 
 export default function Contents() {
@@ -42,7 +41,8 @@ export default function Contents() {
                     <Link href="/blog/makewebsite"><h2><span className="marker">My Home Page</span></h2> </Link> 
                         <div className={styles.contentstext}>
                             <p>このWebサイトとポートフォリオサイトは、Nextjs+TypeScriptを用いて制作しました。</p>
-                            <p>さくらVPS+ドメインで公開しています。あまり情報がなかったので構築に苦戦しました。</p>
+                            <p>Conoha VPS+ドメインで公開しています。あまり情報がなかったので構築に苦戦しました。<br />
+                            Docker化を行いkamalを使用して公開しました.</p>
                             <p>BlogページはMicroCMSで管理しています。</p>
                             <p>Portfolioページは現在作成中です</p>
                             <p>ポートフォリオページでは、スキルセット、研究などについて記載する予定です</p>
@@ -52,7 +52,9 @@ export default function Contents() {
                                 <p >フロントエンド: Nextjs 14.2.15 , TypeScript , CSS</p>
                                 <p>バックエンド : Nodejs  CMS : Micro CMS バージョン管理 : Git , GitHub</p>
                                 <p>グラフィック・UI/UX・デザイン : Adobe Illustrator , PhotoShop , StoryBook 8.3.6 </p>
-                                <p>VPS : さくらのVPS</p>
+                                <p>VPS : Conoha VPS <br />
+                                その他 : Docker
+                                </p>
                             </div>
                         </div>
                     </div>

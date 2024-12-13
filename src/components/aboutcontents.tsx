@@ -1,6 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/aboutcontents.module.css"
 
 export default function Aboutcontents() {
