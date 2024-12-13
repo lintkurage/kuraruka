@@ -53,7 +53,7 @@ export default function Contents() {
                                 <p>バックエンド : Nodejs  CMS : Micro CMS バージョン管理 : Git , GitHub</p>
                                 <p>グラフィック・UI/UX・デザイン : Adobe Illustrator , PhotoShop , StoryBook 8.3.6 </p>
                                 <p>VPS : Conoha VPS <br />
-                                その他 : Docker kamal
+                                その他 : Docker
                                 </p>
                             </div>
                         </div>
