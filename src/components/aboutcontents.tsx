@@ -32,7 +32,7 @@ export default function Aboutcontents() {
                     <div className={styles.developmentenvironment}>
                         <div className={styles.imagecontents}>
                             <Link href="/">
-                                <img src="/indexpengin.jpg" alt="works01" className={styles.image}/>
+                                <img src="/kuraruka-webkizai.png" alt="機材紹介画像" className={styles.image}/>
                             </Link>
                         </div>
                         <div className={styles.textcontents}>
