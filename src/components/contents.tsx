@@ -51,7 +51,7 @@ export default function Contents() {
                                 <p>機材 : MacBook Pro(コーディング) , 自作PC(デザイン)</p>
                                 <p >フロントエンド: Nextjs 14.2.15 , TypeScript , CSS</p>
                                 <p>バックエンド : Nodejs  CMS : Micro CMS バージョン管理 : Git , GitHub</p>
-                                <p>グラフィック・UI/UX・デザイン : Adobe Illustrator , PhotoShop , StoryBook 8.3.6 </p>
+                                <p>グラフィック・UI/UX・デザイン : Adobe Illustrator , PhotoShop </p>
                                 <p>VPS : Conoha VPS <br />
                                 その他 : Docker
                                 </p>
@@ -66,14 +66,14 @@ export default function Contents() {
                         <img src="/kurarukaimage.png" alt="works01" className={styles.image}/>
                     </div>
                     <div className={styles.textcontents}>
-                            <h2><span className="marker">くらげらんぷ</span></h2>
+                            <h2><span className="marker">くらげらんぷ(ただいま制作中)</span></h2>
                         <div className={styles.contentstext}>
-                            <p>ものづくり活動の一環としてくらげのかたちをしたランプを作成してみました。</p>
-                            <p>3Dプリンターを使用して制作しました。</p>
-                            <p>くらげのかたちが可愛くできて大満足の作品となりました。</p>
+                            <p>ものづくり活動の一環としてくらげのかたちをしたランプを作成しています</p>
+                            <p>3Dプリンターを使用して制作</p>
+                            <p>くらげのかたちが可愛く作れたらと思います</p>
                             <p>ちょうど京都水族館でくらげらんぷのイベントがあったので参考にしました</p>
                             <div>
-                                <h3 className={styles.useingsofttext}>使用機材・技術</h3>
+                                <h3 className={styles.useingsofttext}>使用機材・技術(予定)</h3>
                                 <p>機材 : MacBook Pro , Bambu X1 Carbon</p>
                                 <p>材料 : PLAフィラメント , 鉄パイプ , ランプレセプタクル(E17型) , VVF-1.6-2 , コネクタ類 </p>
                             </div>

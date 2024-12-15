@@ -36,7 +36,7 @@ export default function Abouthero() {
                                 <p>X(旧Twitter) : <Link href="https://x.com/lintkurage" className={styles.link}>https://x.com/lintkurage</Link></p>
                                 <p>Git Hub : <Link href="https://github.com/lintkurage" className={styles.link}>https://github.com/lintkurage</Link></p>
                                 <p>YouTube : <Link href="https://x.gd/cxtfQ" className={styles.link}>https://x.gd/cxtfQ</Link></p>
-                                <p>HP : <Link href="/index.html" className={styles.link}>https://iruka2kurage.com</Link></p>
+                                <p>HP : <Link href="/" className={styles.link}>https://iruka2kurage.com</Link></p>
                             </div>
                         </div>
                     </div>

@@ -27,7 +27,7 @@ const frontdata: DataPoint[] = [
 const backdata: DataPoint[] = [
     { subject: 'Python', A: 3, fullMark: 5 },
     { subject: 'Node.js', A: 3, fullMark: 5 },
-    { subject: 'Ruby', A: 3, fullMark: 5 },
+    { subject: 'PHP', A: 3, fullMark: 5 },
     { subject: 'SQL', A: 3, fullMark: 5 },
     { subject: 'C/C++', A: 4, fullMark: 5 },
     { subject: 'C#', A: 3, fullMark: 5 },

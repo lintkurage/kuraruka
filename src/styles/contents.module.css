@@ -71,10 +71,6 @@
 }
 
 @media (max-width: 1000px){
-    .imagecontents {
-        width: 400px; /* 必要に応じて調整 */
-        height: auto;
-    }
     .titletext {
         padding-left: 50px;
         padding-top: 10px;
@@ -89,16 +85,16 @@
 }
 
 @media (max-width: 768px) {
-    .imagecontents {
-        text-align: center;
-    }
     .image {
         width: 90vw;
         height: auto;
         border-radius: 15px;
-        object-fit: cover; /* 必要に応じて調整 */
     }
 
+    .imagecontents{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     .titletext {
         padding-left: 10px;
