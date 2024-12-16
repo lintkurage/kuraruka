@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { BlogType } from '../../types/blog'; // 型のインポート
 import Layout from 'src/components/layout'
 import styles from "src/styles/blog.module.css"
-import Metadata from 'src/components/meta';
+import Metadatas from 'src/components/meta';
 import BlognameContents from 'src/components/blognamecontents';
 import * as DOMPurify from "isomorphic-dompurify";
 
@@ -23,7 +23,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
 
     return (
         <div className={styles.blog}>
-            <Metadata title={article.title} content={article.summary}></Metadata>
+            <Metadatas title={article.title} content={article.summary}></Metadatas>
             <Layout>
                 <div>
                     <div className={styles.titlecontent}>

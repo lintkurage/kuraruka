@@ -7,10 +7,12 @@ interface MetaProps {
 }
 
 export default function Metadata({ title, content }: MetaProps) {
+    const GSC=process.env.NEXT_PUBLIC_GSC
     return (
         <Head>
             <title>{title}</title>
             <meta name="description" content={content} />
+            <meta name="google-site-verification" content={GSC} />
         </Head>
     );
 }
