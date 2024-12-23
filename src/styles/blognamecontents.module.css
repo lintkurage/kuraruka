@@ -22,11 +22,11 @@
 
 .link {
     text-decoration: none;
-    color: #000000;
+    color: #0f0cf1;
 }
 
 .link:hover{
-    color: #0004ff;
+    color: #3d40fb;
     opacity: 50%;
 }
 
@@ -46,6 +46,6 @@
         padding-right: 10px;
     }
     .link {
-        font-size: 9px;
+        font-size: 12px;
     }
   }

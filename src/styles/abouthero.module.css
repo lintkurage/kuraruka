@@ -46,11 +46,11 @@
 
 .link {
     text-decoration: none;
-    color: #000000;
+    color: #0f0cf1;
 }
 
 .link:hover {
-    color: #0004ff;
+    color: #3d40fb;
     opacity: 50%;
 }
 
@@ -95,10 +95,10 @@
         object-fit: cover; /* 必要に応じて調整 */
     }
     .link {
-        font-size: 9px;
+        font-size: 12px;
     }
     .portfoliolink {
-        font-size: 9px;
+        font-size: 12px;
     }
     .titletext {
         padding-left: 10px;

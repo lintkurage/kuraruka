@@ -61,12 +61,12 @@
 }
 
 .portfoliolink {
-    color: #f41f1f;
+    color: #0f0cf1;
     text-decoration: none;
 }
 
 .portfoliolink:hover {
-    color: #3c95d0;
+    color: #3d40fb;
     opacity: 50%;
 }
 

@@ -46,11 +46,11 @@ css
 
 .link {
     text-decoration: none;
-    color: #000000;
+    color: #0f0cf1;
 }
 
 .link:hover{
-    color: #0004ff;
+    color: #3d40fb;
     opacity: 50%;
 }
 
@@ -69,7 +69,7 @@ css
 
   @media (max-width: 768px) {
     .link{
-        font-size: 9px;
+        font-size: 12px;
     }
     .titletext{
         padding-top: 60px;

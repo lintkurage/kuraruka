@@ -231,7 +231,7 @@ ol li {
 a {
 	font-size: 18px;
 	text-decoration: none;
-	color: #f96c6c;
+	color: #0f0cf1;
 	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
 		sans-serif;
 	line-height: 1.5em;
@@ -289,7 +289,7 @@ hr {
 @media (max-width: 768px) {
 	p {
 		text-align: left;
-		font-size: 9px;
+		font-size: 12px;
 		color: #000000;
 		font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
 			sans-serif;
@@ -305,7 +305,7 @@ hr {
 	}
 
 	h2 {
-		font-size: 16px;
+		font-size: 18px;
 		color: #000000;
 		font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
 			sans-serif;
@@ -313,7 +313,7 @@ hr {
 	}
 
 	h3 {
-		font-size: 12px;
+		font-size: 16px;
 		color: #000000;
 		font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
 			sans-serif;
