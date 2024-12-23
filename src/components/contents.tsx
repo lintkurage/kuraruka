@@ -46,13 +46,14 @@ export default function Contents() {
                             <p>BlogページはMicroCMSで管理しています。</p>
                             <p>Portfolioページは現在作成中です</p>
                             <p>ポートフォリオページでは、スキルセット、研究などについて記載する予定です</p>
+                            <p>VPSで公開したときの記事は<Link href="/blog/nextconohavps" className={styles.portfoliolink}>こちら</Link></p>
                             <div>
                                 <h3 className={styles.useingsofttext}>使用機材・技術</h3>
                                 <p>機材 : MacBook Pro(コーディング) , 自作PC(デザイン)</p>
                                 <p >フロントエンド: Nextjs 14.2.15 , TypeScript , CSS</p>
                                 <p>バックエンド : Nodejs  CMS : Micro CMS バージョン管理 : Git , GitHub</p>
                                 <p>グラフィック・UI/UX・デザイン : Adobe Illustrator , PhotoShop </p>
-                                <p>VPS : Conoha VPS <br />
+                                <p>VPS : Conoha VPS 
                                 その他 : Docker
                                 </p>
                             </div>

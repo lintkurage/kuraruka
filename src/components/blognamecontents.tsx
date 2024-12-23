@@ -12,6 +12,7 @@ export default function BlognameContents(){
                         趣味は、温泉巡り、ものづくり、麻雀など <br />
                         Web開発やものづくり、温泉などについての記事を書いています.
                     </p>
+                    <p>一人でも多くの人にものづくりの楽しさを知ってもらえるように活動しています.</p>
                     <div>
                         <br />
                         <p>SNSについて</p>
