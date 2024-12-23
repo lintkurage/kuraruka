@@ -48,11 +48,11 @@ const BlogItem = ({ blog }: BlogItemProps) => {
                         <div className={styles.summarycontents}>
                             <p className={styles.text}>{blog.summary}</p>
                         </div>
-                        <div className={styles.category} style={{lineHeight: "1.5em"}}>
+                        <div className={styles.category} style={{ lineHeight: "1.5em" }}>
                             <div className={styles.categoryname}>カテゴリー : </div>
                             {blog.category.length > 0 ? (
                                 blog.category.map((cat) => (
-                                    <span key={cat.id} className={styles.categorybox} style={{ marginRight: "8px" ,marginLeft: "8px", backgroundColor: cat.color}}>
+                                    <span key={cat.id} className={styles.categorybox} style={{ marginRight: "8px", marginLeft: "8px", backgroundColor: cat.color }}>
                                         {cat.name}
                                     </span>
                                 ))

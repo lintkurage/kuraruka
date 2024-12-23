@@ -32,6 +32,19 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
                         {/* 記事タイトル */}
                         <h1 className={styles.blogtitle}>{article.title}</h1>
 
+                        <div className={styles.category} style={{ lineHeight: "1.5em" }}>
+                            <div className={styles.categoryname}>カテゴリー : </div>
+                            {article.category.length > 0 ? (
+                                article.category.map((cat) => (
+                                    <span key={cat.id} className={styles.categorybox} style={{ marginRight: "8px", marginLeft: "8px", backgroundColor: cat.color }}>
+                                        {cat.name}
+                                    </span>
+                                ))
+                            ) : (
+                                "カテゴリー未設定"
+                            )}
+                        </div>
+
                         {/* 記事公開日 */}
                         <p className={styles.publishedAt}>Publish Date: {new Date(article.publishData).toLocaleDateString()}</p>
                         <p className={styles.publishedAt}>Author:iruka2kurage</p>
