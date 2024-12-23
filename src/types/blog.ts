@@ -26,6 +26,6 @@ export interface BlogType{
         height:number
         width:number
     }
-    category:CategoryType
+    category:CategoryType[]
     summary:string
 }

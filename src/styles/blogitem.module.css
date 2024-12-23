@@ -46,6 +46,30 @@
     border-radius: 15px;
 }
 
+.categoryname{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+		sans-serif;
+	line-height: 1.5em;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.category{
+    padding-top: 1em;
+}
+
+.categorybox{
+    display: inline-block;
+	margin: 0 .1em .6em 0;
+	padding: .3em;
+	line-height: 1em;
+	text-decoration: none;
+	color: #000000;
+	border: 1px solid #303031;
+	border-radius: 1em;
+    font-family: "游ゴシック体";
+    font-size: "18px";
+}
 
 @media (max-width:1000px) {
     .content {
@@ -74,5 +98,12 @@
     }
     .blogcontents {
         display: block;
+    }
+    .categorybox{
+        font-family: "游ゴシック体";
+        font-size: 12px;
+    }
+    .categoryname{
+        font-size: 12px;
     }
   }

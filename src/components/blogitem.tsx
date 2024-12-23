@@ -9,7 +9,6 @@ interface BlogItemProps {
 }
 
 const BlogItem = ({ blog }: BlogItemProps) => {
-    const categoryColor = blog.category.color || "gray"
     const imagewidth = 400
     const imagehight = 240
     const modilesize = 768
@@ -27,7 +26,6 @@ const BlogItem = ({ blog }: BlogItemProps) => {
         window.addEventListener("resize", updateMobileView);
         return () => window.removeEventListener("resize", updateMobileView);
     }, []);
-
     return (
         <div className={styles.content}>
             <div className={styles.article}>
@@ -35,7 +33,7 @@ const BlogItem = ({ blog }: BlogItemProps) => {
 
                     <div>
                         <Link href={`/blog/${blog.slug}`} className={styles.link}>
-                            <img src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"} alt="image" className={styles.image}/>
+                            <img src={blog.eyecatch ? blog.eyecatch.url : "/indexkurage.jpg"} alt="image" className={styles.image} />
                         </Link>
                     </div>
                     <div className={styles.namecontents}>
@@ -49,6 +47,18 @@ const BlogItem = ({ blog }: BlogItemProps) => {
                         </div>
                         <div className={styles.summarycontents}>
                             <p className={styles.text}>{blog.summary}</p>
+                        </div>
+                        <div className={styles.category} style={{ lineHeight: "1.5em" }}>
+                            <div className={styles.categoryname}>カテゴリー : </div>
+                            {blog.category.length > 0 ? (
+                                blog.category.map((cat) => (
+                                    <span key={cat.id} className={styles.categorybox} style={{ marginRight: "8px", marginLeft: "8px", backgroundColor: cat.color }}>
+                                        {cat.name}
+                                    </span>
+                                ))
+                            ) : (
+                                "カテゴリー未設定"
+                            )}
                         </div>
                     </div>
                 </div>
