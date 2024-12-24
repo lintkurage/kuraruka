@@ -8,6 +8,7 @@ import Metadatas from 'src/components/meta';
 import BlognameContents from 'src/components/blognamecontents';
 import * as DOMPurify from "isomorphic-dompurify";
 import { format } from "date-fns"
+import Relatedarticle from '@/components/relatedarticle';
 
 
 interface ArticleProps {
@@ -49,7 +50,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
                         {/* 記事公開日 */}
                         <p className={styles.publishedAt}>Publish Date : {new Date(article.publishData).toLocaleDateString()}</p>
                         <p className={styles.publishedAt}>Update Date : {format(new Date(article.updatedAt), "yyyy/MM/dd")}</p>
-                        <p className={styles.publishedAt}>Author : iruka2kurage</p>
+                        <p className={styles.publishedAt}>Author : {article.Author}</p>
                     </div>
                     <div className={styles.eyecatch}>
                         {/* 記事アイキャッチ画像 */}
@@ -63,6 +64,7 @@ const ArticleDetail: NextPage<ArticleProps> = ({ article }) => {
                     </div>
                 </div>
                 <BlognameContents></BlognameContents>
+                <Relatedarticle></Relatedarticle>
             </Layout>
         </div>
     );
