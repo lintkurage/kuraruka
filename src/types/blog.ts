@@ -19,6 +19,7 @@ export interface BlogType{
     updatedAt:string
     title:string
     slug:string
+    Author:string
     publishData:string
     content:string
     eyecatch:{

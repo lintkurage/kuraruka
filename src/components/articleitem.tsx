@@ -2,13 +2,13 @@ import { BlogType } from "src/types/blog";
 import { useState, useEffect } from "react";
 import { format } from "date-fns"
 import Link from "next/link";
-import styles from "../styles/blogitem.module.css"
+import styles from "../styles/articleitem.module.css"
 
 interface BlogItemProps {
     blog: BlogType
 }
 
-const BlogItem = ({ blog }: BlogItemProps) => {
+const ArticleItem = ({ blog }: BlogItemProps) => {
     const imagewidth = 400
     const imagehight = 240
     const modilesize = 768
@@ -39,27 +39,12 @@ const BlogItem = ({ blog }: BlogItemProps) => {
                     <div className={styles.namecontents}>
                         <div className={styles.nametitle}>
                             <Link href={`/blog/${blog.slug}`} className={styles.link}>
-                                <h2>{blog.title}</h2>
+                                <h3>{blog.title}</h3>
                             </Link>
                         </div>
                         <div>
-                            <p>Author : {blog.Author}</p>
+                            <p>Author : {blog.Author} </p>
                             <p className={styles.text}>Date : {format(new Date(blog.publishData), "yyyy/MM/dd")}</p>
-                        </div>
-                        <div className={styles.summarycontents}>
-                            <p className={styles.text}>{blog.summary}</p>
-                        </div>
-                        <div className={styles.category} style={{ lineHeight: "1.5em" }}>
-                            <div className={styles.categoryname}>カテゴリー : </div>
-                            {blog.category.length > 0 ? (
-                                blog.category.map((cat) => (
-                                    <span key={cat.id} className={styles.categorybox} style={{ marginRight: "8px", marginLeft: "8px", backgroundColor: cat.color }}>
-                                        {cat.name}
-                                    </span>
-                                ))
-                            ) : (
-                                "カテゴリー未設定"
-                            )}
                         </div>
                     </div>
                 </div>
@@ -68,4 +53,4 @@ const BlogItem = ({ blog }: BlogItemProps) => {
     )
 }
 
-export default BlogItem
+export default ArticleItem ;

@@ -182,7 +182,6 @@ pre {
 	padding: 1rem; /* 内側の余白 */
 	border-radius: 8px; /* 角を丸く */
 	overflow-x: auto; /* 横スクロールを可能にする */
-	white-space: pre-wrap; /* 自動で折り返し */
 	margin: 1rem 0; /* 上下の余白 */
 }
 
@@ -326,5 +325,8 @@ hr {
 	ol li {
 		font-size: 12px;
 		line-height: 1.2em;
+	}
+	pre {
+		font-size: 12px; /* 読みやすいサイズ */
 	}
 }
