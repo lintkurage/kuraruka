@@ -47,6 +47,7 @@
 
 .link:hover{
     color: #ffffff;
+    opacity: 50%;
 }
 
 .hamburger {

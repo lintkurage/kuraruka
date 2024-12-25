@@ -1,0 +1,93 @@
+/*
+css
+*/
+
+@charset "UTF-8";
+
+.titletext{
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.contents{
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.line {
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    margin-top: 0;
+}
+
+.mail{
+    background: linear-gradient(transparent 50%, #90f0f9 30%);
+}
+.address{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Request{
+    background: linear-gradient(transparent 50%, #90f0f9 30%);
+}
+
+.Requestcon{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.works{
+    padding-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #0f0cf1;
+}
+
+.link:hover{
+    color: #3d40fb;
+    opacity: 50%;
+}
+
+.PrivacyPolicycontents{
+    padding-top: 1em;
+}
+
+.policy{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+@media (max-width:1000px) {
+    .titletext{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .contents{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .link{
+        font-size: 12px;
+    }
+    .titletext{
+        padding-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .contents{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  }

@@ -5,23 +5,73 @@
 */
 @charset "UTF-8";
 
-.footer{
+.footer {
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    align-items: center; /* 水平方向の中央揃え */
+    justify-content: center; /* 垂直方向の中央揃え */
+    padding: 20px;
     background-color: rgba(91, 222, 248, 0.5);
-    text-align: center;
 }
 
+
 .footercontents{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.navcontents {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    margin-bottom: 20px; /* フッター内容との間隔 */
+}
+
+.nav {
+    display: flex;
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px; /* リンク間のスペース */
+}
+
+.li {
+    margin: 0;
+}
+
+.link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link:hover{
+    color: #ffffff;
+    opacity: 50%;
+}
+
+.navcontents {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    margin-bottom: 10px; /* フッター内容との間隔 */
+}
+
+.nav {
+    display: flex;
+}
+
+.licensetext{
+    text-align: center;
 }
 
 
 @media (max-width:768px) {
-    .footercontents{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
     .licensetext{
         font-size: 12px;
+    }
+    .ul {
+        gap: 20px; /* リンク間のスペース */
     }
   }
